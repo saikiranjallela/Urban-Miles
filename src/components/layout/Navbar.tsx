@@ -74,7 +74,9 @@ export default function Navbar() {
               <Instagram size={18} />
             </motion.a>
             <motion.a
-              href="#event"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.9, duration: 0.5 }}
@@ -134,7 +136,9 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="#event"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

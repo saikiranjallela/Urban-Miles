@@ -110,7 +110,9 @@ export default function FooterCTA() {
             className="flex flex-col sm:flex-row gap-5 justify-center items-center"
           >
             <motion.a
-              href="#event"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               className="group relative overflow-hidden flex items-center gap-3 px-10 py-4 rounded-full text-white font-bold text-base uppercase tracking-widest"

@@ -423,7 +423,9 @@ export default function Hero() {
         >
           {/* Primary CTA */}
           <a
-            href="#event"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-full text-sm md:text-base font-bold uppercase tracking-widest px-8 md:px-10 py-3 md:py-4 text-white transition-all duration-500"
             style={{
               background: "#FF5A1F",

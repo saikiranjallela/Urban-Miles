@@ -149,7 +149,12 @@ export default function Experiences() {
                 </div>
 
                 {/* CTA link */}
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#555555] group-hover:text-white transition-colors duration-300">
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#555555] group-hover:text-white transition-colors duration-300"
+                >
                   Register for {exp.id}
                   <ArrowUpRight
                     size={14}
