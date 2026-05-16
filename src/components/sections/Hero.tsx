@@ -221,7 +221,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#0A0A0A]"
+      className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#0A0A0A]"
     >
       <CursorEffect />
 
@@ -320,14 +320,14 @@ export default function Hero() {
       {/* ── Main Hero Content ── */}
       <motion.div
         style={{ y: textY, opacity }}
-        className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-20 flex flex-col items-center text-center"
+        className="relative z-10 max-w-7xl mx-auto px-4 md:px-12 pt-16 md:pt-20 flex flex-col items-center text-center"
       >
         {/* Top Label */}
         <motion.div
           initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.9, delay: 0.4 }}
-          className="flex items-center gap-6 mb-10"
+          className="flex items-center gap-4 md:gap-6 mb-6 md:mb-10"
         >
           <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#FF5A1F]" />
           <div className="flex flex-col sm:flex-row gap-4 items-center">
@@ -355,7 +355,7 @@ export default function Hero() {
               <motion.span
                 key={i}
                 variants={charVariants}
-                className="inline-block text-[16vw] md:text-[14vw] lg:text-[12vw] font-black uppercase leading-[0.85] tracking-[-0.04em]"
+                className="inline-block text-[13vw] md:text-[14vw] lg:text-[12vw] font-black uppercase leading-[0.85] tracking-[-0.04em]"
                 style={{
                   fontFamily: 'Outfit, sans-serif',
                   color: char === " " ? "transparent" : "#FFFFFF",
@@ -374,12 +374,12 @@ export default function Hero() {
           initial={{ opacity: 0, scaleX: 0.7 }}
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 1, delay: 1.6 }}
-          className="flex items-center gap-4 md:gap-8 mb-8"
+          className="flex items-center gap-3 md:gap-8 mb-6 md:mb-8"
         >
           {["Sweat", "Smile", "Socialize"].map((word, i) => (
-            <div key={word} className="flex items-center gap-4 md:gap-8">
+            <div key={word} className="flex items-center gap-3 md:gap-8">
               <span
-                className="text-2xl md:text-4xl font-bold tracking-wider uppercase"
+                className="text-lg md:text-4xl font-bold tracking-wider uppercase"
                 style={{
                   fontFamily: 'Outfit, sans-serif',
                   color: i === 1 ? "#FF5A1F" : "#FFFFFF",
@@ -399,7 +399,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.9 }}
-          className="text-sm md:text-base font-medium tracking-[0.3em] uppercase text-[#B3B3B3] mb-3"
+          className="text-xs md:text-base font-medium tracking-[0.3em] uppercase text-[#B3B3B3] mb-3"
         >
           Sweat &bull; Smile &bull; Socialize
         </motion.p>
@@ -409,7 +409,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.1 }}
-          className="text-base md:text-lg text-[#555555] font-light italic mb-14 max-w-md leading-relaxed"
+          className="text-sm md:text-lg text-[#555555] font-light italic mb-8 md:mb-14 max-w-md leading-relaxed"
         >
           It starts with a run.<br />It becomes an experience.
         </motion.p>
@@ -424,7 +424,7 @@ export default function Hero() {
           {/* Primary CTA */}
           <a
             href="#event"
-            className="group relative overflow-hidden rounded-full text-base font-bold uppercase tracking-widest px-10 py-4 text-white transition-all duration-500"
+            className="group relative overflow-hidden rounded-full text-sm md:text-base font-bold uppercase tracking-widest px-8 md:px-10 py-3 md:py-4 text-white transition-all duration-500"
             style={{
               background: "#FF5A1F",
               boxShadow: "0 0 30px rgba(255,90,31,0.4), 0 0 60px rgba(255,90,31,0.1)",
@@ -446,7 +446,7 @@ export default function Hero() {
           {/* Secondary CTA */}
           <a
             href="#about"
-            className="group flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#B3B3B3] hover:text-white transition-colors duration-300"
+            className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm font-bold uppercase tracking-widest text-[#B3B3B3] hover:text-white transition-colors duration-300 mt-4 sm:mt-0"
           >
             <span>Explore the Movement</span>
             <div className="w-8 h-[1px] bg-current group-hover:w-14 transition-all duration-300" />

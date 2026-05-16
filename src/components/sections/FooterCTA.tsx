@@ -98,7 +98,7 @@ export default function FooterCTA() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg md:text-xl text-[#B3B3B3] font-light mb-14 max-w-xl mx-auto leading-relaxed"
           >
-            Join 500+ runners writing their stories across the streets of Hyderabad every Sunday at 6AM.
+            Join 100+ runners writing their stories across the streets of Hyderabad every Sunday at 6AM.
           </motion.p>
 
           {/* CTAs */}

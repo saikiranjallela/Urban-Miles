@@ -227,7 +227,7 @@ export default function Community() {
                   className="w-9 h-9 rounded-full border-2 flex items-center justify-center text-[10px] font-bold shrink-0"
                   style={{ borderColor: "#0A0A0A", background: "#FF5A1F", color: "#fff" }}
                 >
-                  500+
+                  100+
                 </div>
               </div>
               <span className="text-[#555555] text-xs font-medium">runners strong</span>

@@ -32,7 +32,7 @@ const testimonials = [
     role: "Entrepreneur",
     location: "Hyderabad",
     quote:
-      "Urban Miles is the best decision I made in 2026. Post-run coffee at Mana Katha, conversations with amazing people, and the energy of 500+ runners? Nothing else compares.",
+      "Urban Miles is the best decision I made in 2026. Post-run coffee at Mana Katha, conversations with amazing people, and the energy of 100+ runners? Nothing else compares.",
     avatar: "https://i.pravatar.cc/150?img=8",
     distance: "3K → 10K",
   },

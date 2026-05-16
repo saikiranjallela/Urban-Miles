@@ -35,7 +35,7 @@ export default function Formula() {
       description:
         "Finish lines are just starting points for conversations. Runners from all walks of life come together, sharing stories, sweat, and laughter. This is where strangers become family.",
       accent: "#FF8C42",
-      stats: ["500+ Runners", "Real Stories", "Zero Judgment"],
+      stats: ["100+ Runners", "Real Stories", "Zero Judgment"],
       icon: "😊",
     },
     {

@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 // ─── Stats / Numbers Section ───────────────────────────────────────────────────
 const stats = [
-  { value: "500+", label: "Runners", sub: "and growing every week" },
+  { value: "100+", label: "Runners", sub: "and growing every week" },
   { value: "52", label: "Sundays", sub: "every year, no excuses" },
   { value: "3", label: "Distances", sub: "3K · 5K · 10K" },
   { value: "1", label: "Community", sub: "you'll never want to leave" },

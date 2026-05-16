@@ -125,7 +125,7 @@ export default function About() {
               }}
             >
               <div className="text-3xl font-black text-[#FF5A1F]" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                500+
+                100+
               </div>
               <div className="text-[#B3B3B3] text-xs font-medium tracking-wider uppercase mt-1">Runners</div>
             </motion.div>
