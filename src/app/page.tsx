@@ -7,7 +7,6 @@ import ManaKatha from "@/components/sections/ManaKatha";
 import Experiences from "@/components/sections/Experiences";
 import Event from "@/components/sections/Event";
 import Community from "@/components/sections/Community";
-import Testimonials from "@/components/sections/Testimonials";
 import FooterCTA from "@/components/sections/FooterCTA";
 
 export default function Home() {
@@ -59,9 +58,6 @@ export default function Home() {
 
       {/* Breathing gap */}
       <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
-
-      {/* Testimonials */}
-      <Testimonials />
 
       {/* Footer + CTA */}
       <FooterCTA />

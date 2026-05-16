@@ -9,28 +9,10 @@ const experiences = [
     id: "3K",
     title: "Fun Run",
     distance: "3 Kilometres",
-    desc: "Perfect for beginners. Experience the city lights, fresh morning air, and urban energy at a comfortable, social pace.",
+    desc: "Perfect for beginners. Experience the city lights, fresh morning air, and urban energy at a comfortable, social pace. Join a vibrant community of runners, make new friends, and start your Sunday right with a refreshing, easy-going 3K run!",
     color: "#60A5FA",
     emoji: "🌅",
     for: "Beginners & social runners",
-  },
-  {
-    id: "5K",
-    title: "Classic Run",
-    distance: "5 Kilometres",
-    desc: "The sweet spot. Push your limits while soaking in the cinematic marathon atmosphere and community energy.",
-    color: "#FF5A1F",
-    emoji: "🔥",
-    for: "Intermediate runners",
-  },
-  {
-    id: "10K",
-    title: "Challenge",
-    distance: "10 Kilometres",
-    desc: "For the relentless. A grueling but deeply rewarding test of endurance through the heart of Hyderabad.",
-    color: "#A78BFA",
-    emoji: "⚡",
-    for: "Experienced runners",
   },
 ];
 
@@ -93,7 +75,7 @@ export default function Experiences() {
         </div>
 
         {/* ── Cards ── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 max-w-xl mx-auto gap-6">
           {experiences.map((exp, i) => (
             <motion.div
               key={exp.id}

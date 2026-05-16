@@ -7,8 +7,6 @@ import { MapPin, Clock, Ticket, ArrowRight, Calendar } from "lucide-react";
 export default function Event() {
   const categories = [
     { label: "3K", sublabel: "Fun Run", color: "#60A5FA", desc: "For beginners & social runners" },
-    { label: "5K", sublabel: "Classic Run", color: "#FF5A1F", desc: "The perfect distance" },
-    { label: "10K", sublabel: "Challenge", color: "#A78BFA", desc: "For the relentless" },
   ];
 
   return (
@@ -156,7 +154,7 @@ export default function Event() {
                         <Ticket size={18} className="text-[#FF5A1F]" />
                       </div>
                       <div>
-                        <div className="text-white font-bold text-base">₹500 Entry</div>
+                        <div className="text-white font-bold text-base">₹499 Entry</div>
                         <div className="text-[#B3B3B3] text-sm font-light mt-1">Includes — T-Shirt, Medal & Post-run experience</div>
                       </div>
                     </div>
