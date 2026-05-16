@@ -54,14 +54,14 @@ export default function Testimonials() {
 
   return (
     <section
-      className="relative py-32 md:py-48 bg-[#111111] overflow-hidden"
+      className="relative py-32 md:py-48 bg-[#161616] overflow-hidden"
     >
       {/* Background accent */}
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] rounded-full opacity-[0.04]"
           style={{
-            background: "radial-gradient(circle, #FF5A1F 0%, transparent 70%)",
+            background: "radial-gradient(circle, #567C4E 0%, transparent 70%)",
             filter: "blur(80px)",
           }}
         />
@@ -78,16 +78,16 @@ export default function Testimonials() {
           className="mb-20 text-center"
         >
           <div className="flex items-center justify-center gap-4 mb-5">
-            <div className="w-10 h-[2px] bg-[#FF5A1F]" />
-            <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.35em] uppercase">Their Stories</span>
-            <div className="w-10 h-[2px] bg-[#FF5A1F]" />
+            <div className="w-10 h-[2px] bg-[#567C4E]" />
+            <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">Their Stories</span>
+            <div className="w-10 h-[2px] bg-[#567C4E]" />
           </div>
           <h2
             className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: 'Oswald, sans-serif' }}
           >
             What Runners<br />
-            <span className="text-[#FF5A1F]">Are Saying.</span>
+            <span className="text-[#567C4E]">Are Saying.</span>
           </h2>
         </motion.div>
 
@@ -110,15 +110,15 @@ export default function Testimonials() {
             {/* Top orange line */}
             <div
               className="absolute top-0 left-0 right-0 h-px rounded-t-3xl"
-              style={{ background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.4), transparent)" }}
+              style={{ background: "linear-gradient(90deg, transparent, rgba(86,124,78,0.4), transparent)" }}
             />
 
             {/* Quote icon */}
             <div
               className="w-12 h-12 rounded-xl flex items-center justify-center mb-8"
-              style={{ background: "rgba(255,90,31,0.1)", border: "1px solid rgba(255,90,31,0.2)" }}
+              style={{ background: "rgba(86,124,78,0.1)", border: "1px solid rgba(86,124,78,0.2)" }}
             >
-              <Quote size={20} className="text-[#FF5A1F]" />
+              <Quote size={20} className="text-[#567C4E]" />
             </div>
 
             {/* Quote text with transition */}
@@ -130,7 +130,7 @@ export default function Testimonials() {
                 exit={{ opacity: 0, y: -20, filter: "blur(4px)" }}
                 transition={{ duration: 0.5 }}
                 className="text-xl md:text-2xl lg:text-3xl font-light text-white leading-relaxed mb-10"
-                style={{ fontFamily: 'Outfit, sans-serif' }}
+                style={{ fontFamily: 'Oswald, sans-serif' }}
               >
                 &ldquo;{current.quote}&rdquo;
               </motion.blockquote>
@@ -148,7 +148,7 @@ export default function Testimonials() {
               >
                 <div
                   className="w-14 h-14 rounded-full overflow-hidden border-2"
-                  style={{ borderColor: "rgba(255,90,31,0.3)" }}
+                  style={{ borderColor: "rgba(86,124,78,0.3)" }}
                 >
                   <img
                     src={current.avatar}
@@ -157,17 +157,17 @@ export default function Testimonials() {
                   />
                 </div>
                 <div>
-                  <div className="text-white font-bold text-lg" style={{ fontFamily: 'Outfit, sans-serif' }}>
+                  <div className="text-white font-bold text-lg" style={{ fontFamily: 'Oswald, sans-serif' }}>
                     {current.name}
                   </div>
-                  <div className="text-[#B3B3B3] text-sm">{current.role} · {current.location}</div>
+                  <div className="text-[#B8B8B8] text-sm">{current.role} · {current.location}</div>
                 </div>
                 <div
                   className="ml-auto px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase"
                   style={{
-                    background: "rgba(255,90,31,0.1)",
-                    border: "1px solid rgba(255,90,31,0.2)",
-                    color: "#FF5A1F",
+                    background: "rgba(86,124,78,0.1)",
+                    border: "1px solid rgba(86,124,78,0.2)",
+                    color: "#567C4E",
                   }}
                 >
                   {current.distance}
@@ -187,14 +187,14 @@ export default function Testimonials() {
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-3 px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 border"
               style={{
-                background: active === i ? "rgba(255,90,31,0.1)" : "rgba(255,255,255,0.02)",
-                borderColor: active === i ? "rgba(255,90,31,0.4)" : "rgba(255,255,255,0.06)",
-                color: active === i ? "#FF5A1F" : "#B3B3B3",
+                background: active === i ? "rgba(86,124,78,0.1)" : "rgba(255,255,255,0.02)",
+                borderColor: active === i ? "rgba(86,124,78,0.4)" : "rgba(255,255,255,0.06)",
+                color: active === i ? "#567C4E" : "#B8B8B8",
               }}
             >
               <div
                 className="w-7 h-7 rounded-full overflow-hidden border"
-                style={{ borderColor: active === i ? "rgba(255,90,31,0.5)" : "rgba(255,255,255,0.1)" }}
+                style={{ borderColor: active === i ? "rgba(86,124,78,0.5)" : "rgba(255,255,255,0.1)" }}
               >
                 <img src={t.avatar} alt={t.name} className="w-full h-full object-cover" />
               </div>

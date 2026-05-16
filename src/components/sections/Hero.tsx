@@ -71,9 +71,9 @@ function ParticleCanvas() {
           streak.y = Math.random() * (canvas.height * 0.7);
         }
         const grad = ctx.createLinearGradient(streak.x - streak.width, streak.y, streak.x + streak.width, streak.y);
-        grad.addColorStop(0, `rgba(255,90,31,0)`);
-        grad.addColorStop(0.5, `rgba(255,90,31,${streak.opacity})`);
-        grad.addColorStop(1, `rgba(255,90,31,0)`);
+        grad.addColorStop(0, `rgba(86,124,78,0)`);
+        grad.addColorStop(0.5, `rgba(86,124,78,${streak.opacity})`);
+        grad.addColorStop(1, `rgba(86,124,78,0)`);
         ctx.beginPath();
         ctx.strokeStyle = grad as unknown as string;
         ctx.lineWidth = 1;
@@ -221,7 +221,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#0A0A0A]"
+      className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#0F0F0F]"
     >
       <CursorEffect />
 
@@ -234,7 +234,7 @@ export default function Hero() {
         <div
           className="absolute top-[15%] left-[20%] w-[50vw] h-[50vw] rounded-full opacity-30"
           style={{
-            background: "radial-gradient(circle, rgba(255,90,31,0.35) 0%, rgba(255,90,31,0.1) 40%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(86,124,78,0.35) 0%, rgba(86,124,78,0.1) 40%, transparent 70%)",
             filter: "blur(80px)",
           }}
         />
@@ -242,7 +242,7 @@ export default function Hero() {
         <div
           className="absolute bottom-[10%] right-[10%] w-[40vw] h-[40vw] rounded-full opacity-20"
           style={{
-            background: "radial-gradient(circle, rgba(200,40,0,0.4) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(62,94,57,0.4) 0%, transparent 70%)",
             filter: "blur(100px)",
           }}
         />
@@ -250,7 +250,7 @@ export default function Hero() {
         <div
           className="absolute top-[40%] right-[30%] w-[30vw] h-[30vw] rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, rgba(255,140,60,0.3) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(62,94,57,0.3) 0%, transparent 70%)",
             filter: "blur(60px)",
           }}
         />
@@ -282,7 +282,7 @@ export default function Hero() {
           <div
             className="text-[22vw] font-black uppercase leading-none opacity-[0.035] tracking-[-0.06em]"
             style={{
-              fontFamily: 'Outfit, sans-serif',
+              fontFamily: 'Oswald, sans-serif',
               WebkitTextStroke: "1px rgba(255,255,255,0.15)",
               color: "transparent",
             }}
@@ -292,8 +292,8 @@ export default function Hero() {
           <div
             className="text-[22vw] font-black uppercase leading-none opacity-[0.025] tracking-[-0.06em]"
             style={{
-              fontFamily: 'Outfit, sans-serif',
-              WebkitTextStroke: "1px rgba(255,90,31,0.2)",
+              fontFamily: 'Oswald, sans-serif',
+              WebkitTextStroke: "1px rgba(86,124,78,0.2)",
               color: "transparent",
               marginTop: "-4vw",
             }}
@@ -307,14 +307,14 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-[4] pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at center, transparent 30%, rgba(10,10,10,0.6) 70%, rgba(10,10,10,0.95) 100%)",
+          background: "radial-gradient(ellipse at center, transparent 30%, rgba(15,15,15,0.6) 70%, rgba(15,15,15,0.95) 100%)",
         }}
       />
 
       {/* ── Layer 4: Bottom Fade ── */}
       <div
         className="absolute bottom-0 left-0 right-0 h-48 z-[4] pointer-events-none"
-        style={{ background: "linear-gradient(to bottom, transparent, #0A0A0A)" }}
+        style={{ background: "linear-gradient(to bottom, transparent, #0F0F0F)" }}
       />
 
       {/* ── Main Hero Content ── */}
@@ -329,17 +329,17 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.4 }}
           className="flex items-center gap-4 md:gap-6 mb-6 md:mb-10"
         >
-          <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#FF5A1F]" />
+          <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#567C4E]" />
           <div className="flex flex-col sm:flex-row gap-4 items-center">
-            <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.35em] uppercase">
+            <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">
               Hyderabad Est. 2026
             </span>
             <span className="hidden sm:block h-[1px] w-4 bg-white/20" />
-            <span className="text-[#B3B3B3] text-xs font-medium tracking-[0.25em] uppercase">
+            <span className="text-[#B8B8B8] text-xs font-medium tracking-[0.25em] uppercase">
               Every Sunday 6AM
             </span>
           </div>
-          <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#FF5A1F]" />
+          <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#567C4E]" />
         </motion.div>
 
         {/* MAIN TITLE with character stagger */}
@@ -357,7 +357,7 @@ export default function Hero() {
                 variants={charVariants}
                 className="inline-block text-[13vw] md:text-[14vw] lg:text-[12vw] font-black uppercase leading-[0.85] tracking-[-0.04em]"
                 style={{
-                  fontFamily: 'Outfit, sans-serif',
+                  fontFamily: 'Oswald, sans-serif',
                   color: char === " " ? "transparent" : "#FFFFFF",
                   width: char === " " ? "3vw" : "auto",
                   display: "inline-block",
@@ -381,14 +381,14 @@ export default function Hero() {
               <span
                 className="text-lg md:text-4xl font-bold tracking-wider uppercase"
                 style={{
-                  fontFamily: 'Outfit, sans-serif',
-                  color: i === 1 ? "#FF5A1F" : "#FFFFFF",
+                  fontFamily: 'Oswald, sans-serif',
+                  color: i === 1 ? "#567C4E" : "#FFFFFF",
                 }}
               >
                 {word}
               </span>
               {i < 2 && (
-                <div className="w-1.5 h-1.5 rounded-full bg-[#FF5A1F] opacity-60" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[#567C4E] opacity-60" />
               )}
             </div>
           ))}
@@ -399,7 +399,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.9 }}
-          className="text-xs md:text-base font-medium tracking-[0.3em] uppercase text-[#B3B3B3] mb-3"
+          className="text-xs md:text-base font-medium tracking-[0.3em] uppercase text-[#B8B8B8] mb-3"
         >
           Sweat &bull; Smile &bull; Socialize
         </motion.p>
@@ -428,14 +428,14 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-full text-sm md:text-base font-bold uppercase tracking-widest px-8 md:px-10 py-3 md:py-4 text-white transition-all duration-500"
             style={{
-              background: "#FF5A1F",
-              boxShadow: "0 0 30px rgba(255,90,31,0.4), 0 0 60px rgba(255,90,31,0.1)",
+              background: "#567C4E",
+              boxShadow: "0 0 30px rgba(86,124,78,0.4), 0 0 60px rgba(86,124,78,0.1)",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.boxShadow = "0 0 50px rgba(255,90,31,0.6), 0 0 100px rgba(255,90,31,0.2)";
+              (e.currentTarget as HTMLElement).style.boxShadow = "0 0 50px rgba(86,124,78,0.6), 0 0 100px rgba(86,124,78,0.2)";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.boxShadow = "0 0 30px rgba(255,90,31,0.4), 0 0 60px rgba(255,90,31,0.1)";
+              (e.currentTarget as HTMLElement).style.boxShadow = "0 0 30px rgba(86,124,78,0.4), 0 0 60px rgba(86,124,78,0.1)";
             }}
           >
             <span className="absolute inset-0 bg-white/20 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
@@ -448,7 +448,7 @@ export default function Hero() {
           {/* Secondary CTA */}
           <a
             href="#about"
-            className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm font-bold uppercase tracking-widest text-[#B3B3B3] hover:text-white transition-colors duration-300 mt-4 sm:mt-0"
+            className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm font-bold uppercase tracking-widest text-[#B8B8B8] hover:text-white transition-colors duration-300 mt-4 sm:mt-0"
           >
             <span>Explore the Movement</span>
             <div className="w-8 h-[1px] bg-current group-hover:w-14 transition-all duration-300" />
@@ -468,7 +468,7 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8 }}
-          className="text-[#FF5A1F] opacity-60"
+          className="text-[#567C4E] opacity-60"
         >
           <ChevronDown size={18} />
         </motion.div>
@@ -479,12 +479,12 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.5, duration: 1 }}
-        className="absolute bottom-0 left-0 right-0 z-[8] overflow-hidden border-t border-white/5 bg-[#0A0A0A]/50 backdrop-blur-sm py-3"
+        className="absolute bottom-0 left-0 right-0 z-[8] overflow-hidden border-t border-white/5 bg-[#0F0F0F]/50 backdrop-blur-sm py-3"
       >
         <div className="flex animate-marquee whitespace-nowrap">
           {Array.from({ length: 6 }).map((_, i) => (
             <span key={i} className="inline-flex items-center gap-6 px-6 text-[10px] font-bold tracking-[0.3em] uppercase text-[#333333]">
-              Urban Miles <span className="text-[#FF5A1F]">✦</span> Every Sunday 6AM <span className="text-[#FF5A1F]">✦</span> Mana Katha Cafe <span className="text-[#FF5A1F]">✦</span> LB Nagar Hyderabad <span className="text-[#FF5A1F]">✦</span> Sweat. Smile. Socialize. <span className="text-[#FF5A1F]">✦</span> Est. 2026 <span className="text-[#FF5A1F]">✦</span>
+              Urban Miles <span className="text-[#567C4E]">✦</span> Every Sunday 6AM <span className="text-[#567C4E]">✦</span> Mana Katha Cafe <span className="text-[#567C4E]">✦</span> LB Nagar Hyderabad <span className="text-[#567C4E]">✦</span> Sweat. Smile. Socialize. <span className="text-[#567C4E]">✦</span> Est. 2026 <span className="text-[#567C4E]">✦</span>
             </span>
           ))}
         </div>

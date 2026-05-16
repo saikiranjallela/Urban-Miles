@@ -12,7 +12,7 @@ import FooterCTA from "@/components/sections/FooterCTA";
 export default function Home() {
   return (
     <main
-      className="min-h-screen bg-[#0A0A0A] text-white"
+      className="min-h-screen bg-[#0F0F0F] text-white"
       style={{ overflowX: "hidden" }}
     >
       <Navbar />
@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
 
       {/* Breathing gap */}
-      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.15), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(86,124,78,0.15), transparent)" }} />
 
       {/* About — story section */}
       <About />
@@ -36,7 +36,7 @@ export default function Home() {
       <Formula />
 
       {/* Breathing gap */}
-      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,179,71,0.15), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(109,147,100,0.15), transparent)" }} />
 
       {/* Mana Katha — cultural partnership */}
       <ManaKatha />
@@ -48,7 +48,7 @@ export default function Home() {
       <Experiences />
 
       {/* Breathing gap */}
-      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.1), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(86,124,78,0.1), transparent)" }} />
 
       {/* Event — next Sunday run */}
       <Event />

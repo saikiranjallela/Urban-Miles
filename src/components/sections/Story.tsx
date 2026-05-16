@@ -19,7 +19,7 @@ export default function Story() {
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 font-outfit"
+              className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 font-Oswald"
             >
               More Than <br />
               <span className="text-primary">Just Running.</span>

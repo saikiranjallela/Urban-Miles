@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
+import { Oswald, Inter } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const oswaldFont = Oswald({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-oswald",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const inter = Inter({
@@ -36,8 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.variable} ${inter.variable} antialiased bg-[#0A0A0A] text-white grain-overlay`}
-        style={{ fontFamily: "var(--font-outfit), var(--font-inter), sans-serif" }}
+        className={`${oswaldFont.variable} ${inter.variable} antialiased bg-[#0F0F0F] text-white grain-overlay`}
+        style={{ fontFamily: "var(--font-oswald), var(--font-inter), sans-serif" }}
       >
         {children}
       </body>

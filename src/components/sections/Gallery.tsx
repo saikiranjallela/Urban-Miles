@@ -22,7 +22,7 @@ export default function Gallery() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-black uppercase tracking-tighter font-outfit"
+            className="text-4xl md:text-6xl font-black uppercase tracking-tighter font-Oswald"
           >
             The City <br className="md:hidden" />
             <span className="text-text-secondary">In Motion.</span>

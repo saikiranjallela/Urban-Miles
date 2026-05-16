@@ -29,17 +29,17 @@ export default function Navbar() {
         transition={{ duration: 1, delay: 0.2 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/5 py-3"
+            ? "bg-[#0F0F0F]/80 backdrop-blur-xl border-b border-white/5 py-3"
             : "bg-transparent py-6"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="relative group">
-            <span className="text-xl md:text-2xl font-black tracking-tighter uppercase" style={{ fontFamily: 'Outfit, sans-serif', letterSpacing: '-0.04em' }}>
-              URBAN<span className="text-[#FF5A1F] group-hover:text-glow transition-all duration-300">MILES</span>
+            <span className="text-xl md:text-2xl font-black tracking-tighter uppercase" style={{ fontFamily: 'Oswald, sans-serif', letterSpacing: '-0.04em' }}>
+              URBAN<span className="text-[#567C4E] group-hover:text-glow transition-all duration-300">MILES</span>
             </span>
-            <div className="absolute -bottom-1 left-0 h-[1px] w-0 group-hover:w-full bg-[#FF5A1F] transition-all duration-500" />
+            <div className="absolute -bottom-1 left-0 h-[1px] w-0 group-hover:w-full bg-[#567C4E] transition-all duration-500" />
           </a>
 
           {/* Desktop Nav */}
@@ -51,10 +51,10 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.08 }}
-                className="relative text-sm font-medium tracking-wider text-[#B3B3B3] hover:text-white transition-colors duration-300 group uppercase"
+                className="relative text-sm font-medium tracking-wider text-[#B8B8B8] hover:text-white transition-colors duration-300 group uppercase"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 h-[1px] w-0 group-hover:w-full bg-[#FF5A1F] transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 h-[1px] w-0 group-hover:w-full bg-[#567C4E] transition-all duration-300" />
               </motion.a>
             ))}
           </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="text-[#B3B3B3] hover:text-[#FF5A1F] transition-colors duration-300"
+              className="text-[#B8B8B8] hover:text-[#567C4E] transition-colors duration-300"
               aria-label="Instagram"
             >
               <Instagram size={18} />
@@ -80,10 +80,10 @@ export default function Navbar() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.9, duration: 0.5 }}
-              className="relative overflow-hidden group px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider text-white border border-[#FF5A1F] hover:border-transparent transition-all duration-300"
-              style={{ boxShadow: '0 0 20px rgba(255, 90, 31, 0.15)' }}
+              className="relative overflow-hidden group px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider text-white border border-[#567C4E] hover:border-transparent transition-all duration-300"
+              style={{ boxShadow: '0 0 20px rgba(86, 124, 78, 0.15)' }}
             >
-              <span className="absolute inset-0 bg-[#FF5A1F] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+              <span className="absolute inset-0 bg-[#567C4E] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
               <span className="relative">Register Now</span>
             </motion.a>
           </div>
@@ -118,7 +118,7 @@ export default function Navbar() {
             exit={{ opacity: 0, clipPath: "inset(0 0 100% 0)" }}
             transition={{ duration: 0.4 }}
             className="fixed inset-0 z-40 flex flex-col justify-center items-center"
-            style={{ background: 'rgba(10,10,10,0.97)', backdropFilter: 'blur(30px)' }}
+            style={{ background: 'rgba(15,15,15,0.97)', backdropFilter: 'blur(30px)' }}
           >
             <div className="flex flex-col items-center gap-8">
               {navLinks.map((link, i) => (
@@ -129,8 +129,8 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08, duration: 0.4 }}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-4xl font-black uppercase tracking-tighter text-white hover:text-[#FF5A1F] transition-colors duration-300"
-                  style={{ fontFamily: 'Outfit, sans-serif' }}
+                  className="text-4xl font-black uppercase tracking-tighter text-white hover:text-[#567C4E] transition-colors duration-300"
+                  style={{ fontFamily: 'Oswald, sans-serif' }}
                 >
                   {link.label}
                 </motion.a>
@@ -143,8 +143,8 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.4 }}
-                className="mt-8 px-10 py-4 rounded-full text-lg font-bold uppercase tracking-wider text-white bg-[#FF5A1F]"
-                style={{ boxShadow: '0 0 40px rgba(255,90,31,0.4)' }}
+                className="mt-8 px-10 py-4 rounded-full text-lg font-bold uppercase tracking-wider text-white bg-[#567C4E]"
+                style={{ boxShadow: '0 0 40px rgba(86,124,78,0.4)' }}
               >
                 Register Now
               </motion.a>

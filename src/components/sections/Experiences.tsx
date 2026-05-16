@@ -20,7 +20,7 @@ export default function Experiences() {
   return (
     <section
       id="experiences"
-      className="relative py-32 md:py-40 bg-[#111111] overflow-hidden border-y"
+      className="relative py-32 md:py-40 bg-[#161616] overflow-hidden border-y"
       style={{ borderColor: "rgba(255,255,255,0.04)" }}
     >
       {/* Subtle grid texture */}
@@ -43,12 +43,12 @@ export default function Experiences() {
             transition={{ duration: 0.9 }}
           >
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-10 h-[2px] bg-[#FF5A1F]" />
-              <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.35em] uppercase">Run Categories</span>
+              <div className="w-10 h-[2px] bg-[#567C4E]" />
+              <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">Run Categories</span>
             </div>
             <h2
               className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]"
-              style={{ fontFamily: 'Outfit, sans-serif' }}
+              style={{ fontFamily: 'Oswald, sans-serif' }}
             >
               Choose Your<br />
               <span
@@ -68,7 +68,7 @@ export default function Experiences() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[#B3B3B3] font-light max-w-xs leading-relaxed"
+            className="text-[#B8B8B8] font-light max-w-xs leading-relaxed"
           >
             Every runner is different. Whether you&apos;re here for the vibes or the challenge — we have your distance.
           </motion.p>
@@ -114,7 +114,7 @@ export default function Experiences() {
                 <div className="flex items-start justify-between mb-8">
                   <div
                     className="text-6xl md:text-7xl font-black leading-none tracking-tighter"
-                    style={{ fontFamily: 'Outfit, sans-serif', color: exp.color }}
+                    style={{ fontFamily: 'Oswald, sans-serif', color: exp.color }}
                   >
                     {exp.id}
                   </div>
@@ -127,12 +127,12 @@ export default function Experiences() {
                 </div>
                 <h3
                   className="text-3xl font-black uppercase tracking-tight mb-4 transition-colors duration-300"
-                  style={{ fontFamily: 'Outfit, sans-serif', color: "rgba(255,255,255,0.9)" }}
+                  style={{ fontFamily: 'Oswald, sans-serif', color: "rgba(255,255,255,0.9)" }}
                 >
                   {exp.title}
                 </h3>
 
-                <p className="text-[#B3B3B3] font-light leading-relaxed text-sm mb-8">
+                <p className="text-[#B8B8B8] font-light leading-relaxed text-sm mb-8">
                   {exp.desc}
                 </p>
 

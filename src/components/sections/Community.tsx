@@ -92,7 +92,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       {/* Orange tint on hover */}
       <motion.div
         className="absolute inset-0"
-        style={{ background: "linear-gradient(135deg, rgba(255,90,31,0.2), transparent)" }}
+        style={{ background: "linear-gradient(135deg, rgba(86,124,78,0.2), transparent)" }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.5 }}
       />
@@ -100,7 +100,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       {/* Bottom gradient */}
       <div
         className="absolute bottom-0 left-0 right-0 h-2/3"
-        style={{ background: "linear-gradient(to top, rgba(10,10,10,0.9) 0%, transparent 100%)" }}
+        style={{ background: "linear-gradient(to top, rgba(15,15,15,0.9) 0%, transparent 100%)" }}
       />
 
       {/* Tag */}
@@ -112,9 +112,9 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
         <span
           className="px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase"
           style={{
-            background: "rgba(255,90,31,0.2)",
-            border: "1px solid rgba(255,90,31,0.3)",
-            color: "#FF5A1F",
+            background: "rgba(86,124,78,0.2)",
+            border: "1px solid rgba(86,124,78,0.3)",
+            color: "#567C4E",
           }}
         >
           {item.tag}
@@ -131,10 +131,10 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
             transition={{ duration: 0.3 }}
             className="absolute bottom-6 left-6 right-6"
           >
-            <p className="text-white font-bold text-lg leading-tight" style={{ fontFamily: 'Outfit, sans-serif' }}>
+            <p className="text-white font-bold text-lg leading-tight" style={{ fontFamily: 'Oswald, sans-serif' }}>
               {item.caption}
             </p>
-            <div className="w-8 h-[2px] bg-[#FF5A1F] mt-2" />
+            <div className="w-8 h-[2px] bg-[#567C4E] mt-2" />
           </motion.div>
         )}
       </AnimatePresence>
@@ -142,7 +142,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       {/* Default bottom text */}
       {!hovered && (
         <div className="absolute bottom-4 left-4">
-          <p className="text-[#B3B3B3] text-xs font-medium">{item.caption}</p>
+          <p className="text-[#B8B8B8] text-xs font-medium">{item.caption}</p>
         </div>
       )}
     </motion.div>
@@ -153,14 +153,14 @@ export default function Community() {
   return (
     <section
       id="community"
-      className="relative py-32 md:py-48 bg-[#0A0A0A] overflow-hidden"
+      className="relative py-32 md:py-48 bg-[#0F0F0F] overflow-hidden"
     >
       {/* Atmospheric glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70vw] h-[40vw] rounded-full opacity-[0.06]"
           style={{
-            background: "radial-gradient(ellipse, #FF5A1F 0%, transparent 70%)",
+            background: "radial-gradient(ellipse, #567C4E 0%, transparent 70%)",
             filter: "blur(80px)",
           }}
         />
@@ -177,12 +177,12 @@ export default function Community() {
             transition={{ duration: 0.9 }}
           >
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-10 h-[2px] bg-[#FF5A1F]" />
-              <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.35em] uppercase">Community Love</span>
+              <div className="w-10 h-[2px] bg-[#567C4E]" />
+              <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">Community Love</span>
             </div>
             <h2
               className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]"
-              style={{ fontFamily: 'Outfit, sans-serif' }}
+              style={{ fontFamily: 'Oswald, sans-serif' }}
             >
               Urban Miles<br />
               <span
@@ -204,7 +204,7 @@ export default function Community() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-xs"
           >
-            <p className="text-[#B3B3B3] font-light leading-relaxed mb-6">
+            <p className="text-[#B8B8B8] font-light leading-relaxed mb-6">
               Smiling faces, candid moments, and shared stories. This is what Urban Miles really looks like.
             </p>
             {/* Avatar stack */}
@@ -214,7 +214,7 @@ export default function Community() {
                   <div
                     key={n}
                     className="w-9 h-9 rounded-full border-2 overflow-hidden shrink-0"
-                    style={{ borderColor: "#0A0A0A" }}
+                    style={{ borderColor: "#0F0F0F" }}
                   >
                     <img
                       src={`https://i.pravatar.cc/72?img=${n}`}
@@ -225,7 +225,7 @@ export default function Community() {
                 ))}
                 <div
                   className="w-9 h-9 rounded-full border-2 flex items-center justify-center text-[10px] font-bold shrink-0"
-                  style={{ borderColor: "#0A0A0A", background: "#FF5A1F", color: "#fff" }}
+                  style={{ borderColor: "#0F0F0F", background: "#567C4E", color: "#fff" }}
                 >
                   100+
                 </div>
@@ -254,7 +254,7 @@ export default function Community() {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-[#B3B3B3] hover:text-white transition-colors duration-300"
+            className="group inline-flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-[#B8B8B8] hover:text-white transition-colors duration-300"
           >
             <span>Follow our journey on Instagram</span>
             <div className="w-8 h-px bg-current group-hover:w-16 transition-all duration-300" />

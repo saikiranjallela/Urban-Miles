@@ -22,7 +22,7 @@ export default function FooterCTA() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#0A0A0A]"
+      className="relative overflow-hidden bg-[#0F0F0F]"
     >
       {/* ── CTA Hero Block ── */}
       <div className="relative min-h-[70vh] flex flex-col items-center justify-center text-center py-32 overflow-hidden">
@@ -45,20 +45,20 @@ export default function FooterCTA() {
         <div
           className="absolute inset-0 z-[1]"
           style={{
-            background: "radial-gradient(ellipse at center, rgba(255,90,31,0.15) 0%, rgba(10,10,10,0.7) 60%, #0A0A0A 100%)",
+            background: "radial-gradient(ellipse at center, rgba(86,124,78,0.15) 0%, rgba(15,15,15,0.7) 60%, #0F0F0F 100%)",
           }}
         />
 
         {/* Top gradient */}
         <div
           className="absolute top-0 left-0 right-0 h-32 z-[2]"
-          style={{ background: "linear-gradient(to bottom, #0A0A0A, transparent)" }}
+          style={{ background: "linear-gradient(to bottom, #0F0F0F, transparent)" }}
         />
 
         {/* Bottom gradient */}
         <div
           className="absolute bottom-0 left-0 right-0 h-32 z-[2]"
-          style={{ background: "linear-gradient(to top, #0A0A0A, transparent)" }}
+          style={{ background: "linear-gradient(to top, #0F0F0F, transparent)" }}
         />
 
         {/* Content */}
@@ -72,9 +72,9 @@ export default function FooterCTA() {
             transition={{ duration: 0.9 }}
             className="flex items-center justify-center gap-4 mb-8"
           >
-            <div className="w-10 h-[2px] bg-[#FF5A1F]" />
-            <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.35em] uppercase">Join the Movement</span>
-            <div className="w-10 h-[2px] bg-[#FF5A1F]" />
+            <div className="w-10 h-[2px] bg-[#567C4E]" />
+            <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">Join the Movement</span>
+            <div className="w-10 h-[2px] bg-[#567C4E]" />
           </motion.div>
 
           {/* Headline */}
@@ -84,10 +84,10 @@ export default function FooterCTA() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.1 }}
             className="text-6xl md:text-8xl lg:text-[10vw] font-black uppercase tracking-tighter leading-[0.85] mb-6"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: 'Oswald, sans-serif' }}
           >
             Your Story<br />
-            <span className="text-[#FF5A1F]">Starts Sunday.</span>
+            <span className="text-[#567C4E]">Starts Sunday.</span>
           </motion.h2>
 
           {/* Tagline */}
@@ -96,7 +96,7 @@ export default function FooterCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg md:text-xl text-[#B3B3B3] font-light mb-14 max-w-xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-[#B8B8B8] font-light mb-14 max-w-xl mx-auto leading-relaxed"
           >
             Join 100+ runners writing their stories across the streets of Hyderabad every Sunday at 6AM.
           </motion.p>
@@ -117,8 +117,8 @@ export default function FooterCTA() {
               whileTap={{ scale: 0.96 }}
               className="group relative overflow-hidden flex items-center gap-3 px-10 py-4 rounded-full text-white font-bold text-base uppercase tracking-widest"
               style={{
-                background: "#FF5A1F",
-                boxShadow: "0 0 40px rgba(255,90,31,0.4), 0 20px 40px rgba(0,0,0,0.4)",
+                background: "#567C4E",
+                boxShadow: "0 0 40px rgba(86,124,78,0.4), 0 20px 40px rgba(0,0,0,0.4)",
               }}
             >
               <span className="absolute inset-0 bg-white/20 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
@@ -148,15 +148,15 @@ export default function FooterCTA() {
             <div className="lg:col-span-2">
               <div
                 className="text-3xl font-black uppercase tracking-tighter mb-4"
-                style={{ fontFamily: 'Outfit, sans-serif' }}
+                style={{ fontFamily: 'Oswald, sans-serif' }}
               >
-                URBAN<span className="text-[#FF5A1F]">MILES</span>
+                URBAN<span className="text-[#567C4E]">MILES</span>
               </div>
               <p className="text-[#555555] font-light leading-relaxed text-sm mb-6 max-w-xs">
                 A premium urban running movement. Every Sunday. Every mile, a new story.
               </p>
               <div className="flex items-center gap-2 mb-6">
-                <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.3em] uppercase">Hyderabad</span>
+                <span className="text-[#567C4E] text-xs font-bold tracking-[0.3em] uppercase">Hyderabad</span>
                 <span className="text-[#333333]">·</span>
                 <span className="text-[#555555] text-xs tracking-wider">Est. 2026</span>
               </div>
@@ -172,7 +172,7 @@ export default function FooterCTA() {
                     target={href !== "#" ? "_blank" : undefined}
                     rel={href !== "#" ? "noopener noreferrer" : undefined}
                     aria-label={label}
-                    className="w-9 h-9 rounded-full flex items-center justify-center text-[#555555] hover:text-[#FF5A1F] transition-colors duration-300"
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-[#555555] hover:text-[#567C4E] transition-colors duration-300"
                     style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}
                   >
                     <Icon size={15} />

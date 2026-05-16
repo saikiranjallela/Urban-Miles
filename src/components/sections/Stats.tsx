@@ -17,7 +17,7 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="relative py-24 md:py-32 overflow-hidden bg-[#0A0A0A]"
+      className="relative py-24 md:py-32 overflow-hidden bg-[#0F0F0F]"
     >
       {/* Horizontal rule top */}
       <div className="absolute top-0 left-12 right-12 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent)" }} />
@@ -26,7 +26,7 @@ export default function Stats() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at 50% 100%, rgba(255,90,31,0.06) 0%, transparent 60%)",
+          background: "radial-gradient(ellipse at 50% 100%, rgba(86,124,78,0.06) 0%, transparent 60%)",
         }}
       />
 
@@ -45,14 +45,14 @@ export default function Stats() {
               {/* Hover glow */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ background: "radial-gradient(circle at center, rgba(255,90,31,0.04) 0%, transparent 70%)" }}
+                style={{ background: "radial-gradient(circle at center, rgba(86,124,78,0.04) 0%, transparent 70%)" }}
               />
 
               {/* Number */}
               <div
-                className="text-5xl md:text-6xl lg:text-7xl font-black mb-3 tracking-tighter transition-colors duration-300 group-hover:text-[#FF5A1F]"
+                className="text-5xl md:text-6xl lg:text-7xl font-black mb-3 tracking-tighter transition-colors duration-300 group-hover:text-[#567C4E]"
                 style={{
-                  fontFamily: 'Outfit, sans-serif',
+                  fontFamily: 'Oswald, sans-serif',
                   background: "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.5) 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -62,7 +62,7 @@ export default function Stats() {
               </div>
 
               {/* Label */}
-              <div className="text-white font-bold text-lg mb-1" style={{ fontFamily: 'Outfit, sans-serif' }}>
+              <div className="text-white font-bold text-lg mb-1" style={{ fontFamily: 'Oswald, sans-serif' }}>
                 {stat.label}
               </div>
 
@@ -70,7 +70,7 @@ export default function Stats() {
               <div className="text-[#555555] text-sm font-light">{stat.sub}</div>
 
               {/* Bottom accent on hover */}
-              <div className="absolute bottom-0 left-8 w-0 group-hover:w-12 h-[2px] bg-[#FF5A1F] transition-all duration-500" />
+              <div className="absolute bottom-0 left-8 w-0 group-hover:w-12 h-[2px] bg-[#567C4E] transition-all duration-500" />
             </motion.div>
           ))}
         </div>

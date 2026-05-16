@@ -12,14 +12,14 @@ export default function Event() {
   return (
     <section
       id="event"
-      className="relative py-32 md:py-48 bg-[#0A0A0A] overflow-hidden"
+      className="relative py-32 md:py-48 bg-[#0F0F0F] overflow-hidden"
     >
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] rounded-full opacity-[0.07]"
           style={{
-            background: "radial-gradient(circle, #FF5A1F 0%, transparent 70%)",
+            background: "radial-gradient(circle, #567C4E 0%, transparent 70%)",
             filter: "blur(100px)",
           }}
         />
@@ -36,18 +36,18 @@ export default function Event() {
             transition={{ duration: 0.9 }}
           >
             <div className="flex items-center justify-center gap-4 mb-5">
-              <div className="w-10 h-[2px] bg-[#FF5A1F]" />
-              <span className="text-[#FF5A1F] text-xs font-bold tracking-[0.35em] uppercase">Next Event</span>
-              <div className="w-10 h-[2px] bg-[#FF5A1F]" />
+              <div className="w-10 h-[2px] bg-[#567C4E]" />
+              <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">Next Event</span>
+              <div className="w-10 h-[2px] bg-[#567C4E]" />
             </div>
             <h2
               className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-6"
-              style={{ fontFamily: 'Outfit, sans-serif' }}
+              style={{ fontFamily: 'Oswald, sans-serif' }}
             >
               The Sunday<br />
-              <span className="text-[#FF5A1F]">Ritual.</span>
+              <span className="text-[#567C4E]">Ritual.</span>
             </h2>
-            <p className="text-[#B3B3B3] text-lg font-light max-w-lg mx-auto leading-relaxed">
+            <p className="text-[#B8B8B8] text-lg font-light max-w-lg mx-auto leading-relaxed">
               Every Sunday is a new story. Lace up, show up, and let the city be your stage.
             </p>
           </motion.div>
@@ -65,7 +65,7 @@ export default function Event() {
           <div
             className="absolute -inset-px rounded-3xl opacity-60"
             style={{
-              background: "linear-gradient(135deg, rgba(255,90,31,0.5) 0%, rgba(255,90,31,0.1) 50%, rgba(255,90,31,0.3) 100%)",
+              background: "linear-gradient(135deg, rgba(86,124,78,0.5) 0%, rgba(86,124,78,0.1) 50%, rgba(86,124,78,0.3) 100%)",
             }}
           />
 
@@ -79,7 +79,7 @@ export default function Event() {
             {/* Top accent line */}
             <div
               className="absolute top-0 left-0 right-0 h-[2px]"
-              style={{ background: "linear-gradient(90deg, transparent, #FF5A1F, transparent)" }}
+              style={{ background: "linear-gradient(90deg, transparent, #567C4E, transparent)" }}
             />
 
             <div className="p-8 md:p-12 lg:p-16">
@@ -89,73 +89,73 @@ export default function Event() {
                 <div>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 text-xs font-bold tracking-widest uppercase"
                     style={{
-                      background: "rgba(255,90,31,0.1)",
-                      border: "1px solid rgba(255,90,31,0.2)",
-                      color: "#FF5A1F",
+                      background: "rgba(86,124,78,0.1)",
+                      border: "1px solid rgba(86,124,78,0.2)",
+                      color: "#567C4E",
                     }}
                   >
-                    <span className="w-2 h-2 rounded-full bg-[#FF5A1F] animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-[#567C4E] animate-pulse" />
                     Registration Open
                   </div>
 
                   <h3
                     className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-8 leading-tight"
-                    style={{ fontFamily: 'Outfit, sans-serif' }}
+                    style={{ fontFamily: 'Oswald, sans-serif' }}
                   >
                     Urban Miles<br />
-                    <span className="text-[#FF5A1F]">Sunday Run</span>
+                    <span className="text-[#567C4E]">Sunday Run</span>
                   </h3>
 
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5"
-                        style={{ background: "rgba(255,90,31,0.1)", border: "1px solid rgba(255,90,31,0.2)" }}
+                        style={{ background: "rgba(86,124,78,0.1)", border: "1px solid rgba(86,124,78,0.2)" }}
                       >
-                        <MapPin size={18} className="text-[#FF5A1F]" />
+                        <MapPin size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
                         <div className="text-white font-bold text-base">Mana Katha Cafe, Panama</div>
-                        <div className="text-[#B3B3B3] text-sm font-light mt-1">LB Nagar, Hyderabad, Telangana</div>
+                        <div className="text-[#B8B8B8] text-sm font-light mt-1">LB Nagar, Hyderabad, Telangana</div>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-4">
                       <div
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                        style={{ background: "rgba(255,90,31,0.1)", border: "1px solid rgba(255,90,31,0.2)" }}
+                        style={{ background: "rgba(86,124,78,0.1)", border: "1px solid rgba(86,124,78,0.2)" }}
                       >
-                        <Calendar size={18} className="text-[#FF5A1F]" />
+                        <Calendar size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
                         <div className="text-white font-bold text-base">Every Sunday</div>
-                        <div className="text-[#B3B3B3] text-sm font-light mt-1">Weekly recurring event — 52 Sundays a year</div>
+                        <div className="text-[#B8B8B8] text-sm font-light mt-1">Weekly recurring event — 52 Sundays a year</div>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-4">
                       <div
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                        style={{ background: "rgba(255,90,31,0.1)", border: "1px solid rgba(255,90,31,0.2)" }}
+                        style={{ background: "rgba(86,124,78,0.1)", border: "1px solid rgba(86,124,78,0.2)" }}
                       >
-                        <Clock size={18} className="text-[#FF5A1F]" />
+                        <Clock size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
                         <div className="text-white font-bold text-base">6:00 AM Assembly</div>
-                        <div className="text-[#B3B3B3] text-sm font-light mt-1">Flag off at 6:15 AM — post-run at Mana Katha</div>
+                        <div className="text-[#B8B8B8] text-sm font-light mt-1">Flag off at 6:15 AM — post-run at Mana Katha</div>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-4">
                       <div
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                        style={{ background: "rgba(255,90,31,0.1)", border: "1px solid rgba(255,90,31,0.2)" }}
+                        style={{ background: "rgba(86,124,78,0.1)", border: "1px solid rgba(86,124,78,0.2)" }}
                       >
-                        <Ticket size={18} className="text-[#FF5A1F]" />
+                        <Ticket size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
                         <div className="text-white font-bold text-base">₹499 Entry</div>
-                        <div className="text-[#B3B3B3] text-sm font-light mt-1">Includes — T-Shirt, Medal & Post-run experience</div>
+                        <div className="text-[#B8B8B8] text-sm font-light mt-1">Includes — T-Shirt, Medal & Post-run experience</div>
                       </div>
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function Event() {
                             <div
                               className="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-black"
                               style={{
-                                fontFamily: 'Outfit, sans-serif',
+                                fontFamily: 'Oswald, sans-serif',
                                 color: cat.color,
                                 background: `${cat.color}15`,
                               }}
@@ -200,7 +200,7 @@ export default function Event() {
                             </div>
                             <div>
                               <div className="text-white font-bold">{cat.sublabel}</div>
-                              <div className="text-[#B3B3B3] text-xs">{cat.desc}</div>
+                              <div className="text-[#B8B8B8] text-xs">{cat.desc}</div>
                             </div>
                           </div>
                           <ArrowRight size={16} className="text-[#555555] group-hover:text-white group-hover:translate-x-1 transition-all duration-300" />
@@ -217,8 +217,8 @@ export default function Event() {
                       whileTap={{ scale: 0.98 }}
                       className="group relative overflow-hidden flex items-center justify-center gap-3 w-full py-4 rounded-2xl text-white font-bold text-base uppercase tracking-widest transition-all duration-300"
                       style={{
-                        background: "#FF5A1F",
-                        boxShadow: "0 0 30px rgba(255,90,31,0.3), 0 20px 40px rgba(0,0,0,0.3)",
+                        background: "#567C4E",
+                        boxShadow: "0 0 30px rgba(86,124,78,0.3), 0 20px 40px rgba(0,0,0,0.3)",
                       }}
                     >
                       <span className="absolute inset-0 bg-white/20 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
