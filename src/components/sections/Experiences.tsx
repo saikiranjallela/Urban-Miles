@@ -160,7 +160,7 @@ export default function Experiences() {
                     size={14}
                     className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
                   />
-                </div>
+                </a>
               </div>
             </motion.div>
           ))}
