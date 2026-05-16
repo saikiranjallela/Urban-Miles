@@ -38,7 +38,7 @@ export default function Stats() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: i * 0.12, ease: "easeInOut" }}
+              transition={{ duration: 0.7, delay: i * 0.12 }}
               className="group relative flex flex-col items-center md:items-start text-center md:text-left px-8 py-12 cursor-default"
               style={{ borderRight: i < 3 ? "1px solid rgba(255,255,255,0.06)" : "none" }}
             >

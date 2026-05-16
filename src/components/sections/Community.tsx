@@ -76,7 +76,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       initial={{ opacity: 0, y: 40, scale: 0.96 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.7, delay: index * 0.06, ease: "easeInOut" }}
+      transition={{ duration: 0.7, delay: index * 0.06 }}
       className={`relative overflow-hidden rounded-2xl cursor-pointer group ${heightClass} ${item.size === "wide" ? "col-span-2" : ""}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -86,7 +86,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${item.url})`, filter: "brightness(0.65) saturate(0.8)" }}
         animate={{ scale: hovered ? 1.06 : 1 }}
-        transition={{ duration: 0.7, ease: "easeInOut" }}
+        transition={{ duration: 0.7 }}
       />
 
       {/* Orange tint on hover */}
@@ -174,7 +174,7 @@ export default function Community() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
+            transition={{ duration: 0.9 }}
           >
             <div className="flex items-center gap-4 mb-5">
               <div className="w-10 h-[2px] bg-[#FF5A1F]" />
@@ -201,7 +201,7 @@ export default function Community() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-xs"
           >
             <p className="text-[#B3B3B3] font-light leading-relaxed mb-6">
@@ -247,7 +247,7 @@ export default function Community() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8 }}
           className="text-center mt-16"
         >
           <a

@@ -58,7 +58,7 @@ export default function Experiences() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
+            transition={{ duration: 0.9 }}
           >
             <div className="flex items-center gap-4 mb-5">
               <div className="w-10 h-[2px] bg-[#FF5A1F]" />
@@ -85,7 +85,7 @@ export default function Experiences() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="text-[#B3B3B3] font-light max-w-xs leading-relaxed"
           >
             Every runner is different. Whether you&apos;re here for the vibes or the challenge — we have your distance.
@@ -100,7 +100,7 @@ export default function Experiences() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: i * 0.12, ease: "easeInOut" }}
+              transition={{ duration: 0.7, delay: i * 0.12 }}
               className="group relative rounded-3xl overflow-hidden cursor-pointer hover-lift"
               style={{
                 background: "rgba(23,23,23,0.9)",

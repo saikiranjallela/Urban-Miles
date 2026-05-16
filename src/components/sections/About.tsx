@@ -45,7 +45,7 @@ export default function About() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.9, ease: "easeInOut" }}
+          transition={{ duration: 0.9 }}
           className="mb-24 md:mb-32"
         >
           <div className="flex items-center gap-4 mb-6">
@@ -80,7 +80,7 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1.2, ease: "easeInOut" }}
+              transition={{ duration: 1.2 }}
               className="relative rounded-2xl overflow-hidden"
               style={{ aspectRatio: "3/4" }}
             >
@@ -115,7 +115,7 @@ export default function About() {
               initial={{ opacity: 0, x: 30, y: 30 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeInOut" }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="absolute -right-6 md:-right-8 top-16 p-5 rounded-2xl"
               style={{
                 background: "rgba(17,17,17,0.9)",
@@ -141,7 +141,7 @@ export default function About() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.9, ease: "easeInOut" }}
+              transition={{ duration: 0.9 }}
               className="space-y-6 mb-16"
             >
               <p className="text-xl md:text-2xl text-white font-light leading-relaxed">
@@ -166,7 +166,7 @@ export default function About() {
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.7, delay: i * 0.15, ease: "easeInOut" }}
+                  transition={{ duration: 0.7, delay: i * 0.15 }}
                   className="group relative flex gap-6 py-8 border-b cursor-default"
                   style={{ borderColor: "rgba(255,255,255,0.06)" }}
                 >

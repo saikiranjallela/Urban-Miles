@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring, AnimatePresence, Variants } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
 // ─── Particle System ───────────────────────────────────────────────────────────
@@ -200,11 +200,21 @@ export default function Hero() {
     visible: { transition: { staggerChildren: 0.06, delayChildren: 0.8 } },
   };
 
-  const charVariants = {
-    hidden: { y: 120, opacity: 0, rotateX: -40, filter: "blur(8px)" },
+  const charVariants: Variants = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+      rotateX: 90,
+      filter: "blur(10px)",
+    },
     visible: {
-      y: 0, opacity: 1, rotateX: 0, filter: "blur(0px)",
-      transition: { duration: 0.9, ease: "easeInOut" }
+      y: 0,
+      opacity: 1,
+      rotateX: 0,
+      filter: "blur(0px)",
+      transition: {
+        duration: 1,
+      },
     },
   };
 
@@ -316,7 +326,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
+          transition={{ duration: 0.9, delay: 0.4 }}
           className="flex items-center gap-6 mb-10"
         >
           <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#FF5A1F]" />
@@ -363,7 +373,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, scaleX: 0.7 }}
           animate={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 1, delay: 1.6, ease: "easeInOut" }}
+          transition={{ duration: 1, delay: 1.6 }}
           className="flex items-center gap-4 md:gap-8 mb-8"
         >
           {["Sweat", "Smile", "Socialize"].map((word, i) => (
@@ -388,7 +398,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.9, ease: "easeInOut" }}
+          transition={{ duration: 0.8, delay: 1.9 }}
           className="text-sm md:text-base font-medium tracking-[0.3em] uppercase text-[#B3B3B3] mb-3"
         >
           Sweat &bull; Smile &bull; Socialize
@@ -398,7 +408,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.1, ease: "easeInOut" }}
+          transition={{ duration: 0.8, delay: 2.1 }}
           className="text-base md:text-lg text-[#555555] font-light italic mb-14 max-w-md leading-relaxed"
         >
           It starts with a run.<br />It becomes an experience.
@@ -408,7 +418,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.3, ease: "easeInOut" }}
+          transition={{ duration: 0.8, delay: 2.3 }}
           className="flex flex-col sm:flex-row gap-5 items-center"
         >
           {/* Primary CTA */}
@@ -455,7 +465,7 @@ export default function Hero() {
         <span className="text-[10px] font-bold tracking-[0.35em] uppercase text-[#555555]">Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+          transition={{ repeat: Infinity, duration: 1.8 }}
           className="text-[#FF5A1F] opacity-60"
         >
           <ChevronDown size={18} />

@@ -35,7 +35,7 @@ export default function Event() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
+            transition={{ duration: 0.9 }}
           >
             <div className="flex items-center justify-center gap-4 mb-5">
               <div className="w-10 h-[2px] bg-[#FF5A1F]" />
@@ -60,7 +60,7 @@ export default function Event() {
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          transition={{ duration: 1 }}
           className="relative max-w-5xl mx-auto mb-16"
         >
           {/* Outer glow border */}

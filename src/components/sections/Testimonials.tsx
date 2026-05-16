@@ -74,7 +74,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: "easeInOut" }}
+          transition={{ duration: 0.9 }}
           className="mb-20 text-center"
         >
           <div className="flex items-center justify-center gap-4 mb-5">
@@ -96,7 +96,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: "easeInOut" }}
+          transition={{ duration: 0.9 }}
           className="max-w-4xl mx-auto mb-16"
         >
           <div
@@ -128,7 +128,7 @@ export default function Testimonials() {
                 initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -20, filter: "blur(4px)" }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.5 }}
                 className="text-xl md:text-2xl lg:text-3xl font-light text-white leading-relaxed mb-10"
                 style={{ fontFamily: 'Outfit, sans-serif' }}
               >
