@@ -77,7 +77,7 @@ export default function Formula() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.9, ease: "easeInOut" }}
           >
             <div className="flex items-center gap-4 mb-5">
               <div className="w-10 h-[2px] bg-[#FF5A1F]" />
@@ -96,7 +96,7 @@ export default function Formula() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
             className="text-[#B3B3B3] text-lg font-light max-w-sm leading-relaxed"
           >
             Three steps. One experience that&apos;ll change the way you think about running.
@@ -111,7 +111,7 @@ export default function Formula() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.15, ease: "easeInOut" }}
                 onClick={() => setActiveStep(activeStep === i ? null : i)}
                 className="flex-shrink-0 flex flex-col items-center gap-3 group cursor-pointer"
                 style={{ width: "140px" }}
@@ -183,7 +183,7 @@ export default function Formula() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.7, delay: i * 0.12, ease: "easeInOut" }}
               onClick={() => setActiveStep(activeStep === i ? null : i)}
               className="group relative p-8 rounded-2xl cursor-pointer transition-all duration-500 hover-lift border"
               style={{
@@ -251,7 +251,7 @@ export default function Formula() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
           className="text-center mt-24"
         >
           <p className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white" style={{ fontFamily: 'Outfit, sans-serif' }}>

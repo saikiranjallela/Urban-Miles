@@ -58,7 +58,7 @@ export default function ManaKatha() {
               initial={{ opacity: 0, scale: 0.92, rotate: -1 }}
               whileInView={{ opacity: 1, scale: 1, rotate: -1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
               className="relative rounded-2xl overflow-hidden"
               style={{ aspectRatio: "4/5" }}
             >
@@ -100,7 +100,7 @@ export default function ManaKatha() {
               initial={{ opacity: 0, x: 40, y: 20 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.9, delay: 0.5, ease: "easeInOut" }}
               className="absolute -right-2 md:-right-6 top-1/3 max-w-[180px] p-5 rounded-2xl z-10"
               style={{
                 background: "rgba(10,10,10,0.9)",
@@ -126,7 +126,7 @@ export default function ManaKatha() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.9, ease: "easeInOut" }}
             >
               {/* Logo */}
               <div className="mb-6 flex items-center gap-4">

@@ -204,7 +204,7 @@ export default function Hero() {
     hidden: { y: 120, opacity: 0, rotateX: -40, filter: "blur(8px)" },
     visible: {
       y: 0, opacity: 1, rotateX: 0, filter: "blur(0px)",
-      transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.9, ease: "easeInOut" }
     },
   };
 
@@ -316,7 +316,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.9, delay: 0.4, ease: "easeInOut" }}
           className="flex items-center gap-6 mb-10"
         >
           <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#FF5A1F]" />
@@ -363,7 +363,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, scaleX: 0.7 }}
           animate={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 1, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1, delay: 1.6, ease: "easeInOut" }}
           className="flex items-center gap-4 md:gap-8 mb-8"
         >
           {["Sweat", "Smile", "Socialize"].map((word, i) => (
@@ -388,7 +388,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.9, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, delay: 1.9, ease: "easeInOut" }}
           className="text-sm md:text-base font-medium tracking-[0.3em] uppercase text-[#B3B3B3] mb-3"
         >
           Sweat &bull; Smile &bull; Socialize
@@ -398,7 +398,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, delay: 2.1, ease: "easeInOut" }}
           className="text-base md:text-lg text-[#555555] font-light italic mb-14 max-w-md leading-relaxed"
         >
           It starts with a run.<br />It becomes an experience.
@@ -408,7 +408,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.3, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, delay: 2.3, ease: "easeInOut" }}
           className="flex flex-col sm:flex-row gap-5 items-center"
         >
           {/* Primary CTA */}

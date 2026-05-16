@@ -69,7 +69,7 @@ export default function FooterCTA() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.9, ease: "easeInOut" }}
             className="flex items-center justify-center gap-4 mb-8"
           >
             <div className="w-10 h-[2px] bg-[#FF5A1F]" />
@@ -82,7 +82,7 @@ export default function FooterCTA() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
             className="text-6xl md:text-8xl lg:text-[10vw] font-black uppercase tracking-tighter leading-[0.85] mb-6"
             style={{ fontFamily: 'Outfit, sans-serif' }}
           >
@@ -95,7 +95,7 @@ export default function FooterCTA() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
             className="text-lg md:text-xl text-[#B3B3B3] font-light mb-14 max-w-xl mx-auto leading-relaxed"
           >
             Join 500+ runners writing their stories across the streets of Hyderabad every Sunday at 6AM.
@@ -106,7 +106,7 @@ export default function FooterCTA() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
             className="flex flex-col sm:flex-row gap-5 justify-center items-center"
           >
             <motion.a

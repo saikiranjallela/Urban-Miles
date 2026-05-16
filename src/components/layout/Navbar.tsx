@@ -26,7 +26,7 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -120, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/5 py-3"
@@ -114,7 +114,7 @@ export default function Navbar() {
             initial={{ opacity: 0, clipPath: "inset(0 0 100% 0)" }}
             animate={{ opacity: 1, clipPath: "inset(0 0 0% 0)" }}
             exit={{ opacity: 0, clipPath: "inset(0 0 100% 0)" }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
             className="fixed inset-0 z-40 flex flex-col justify-center items-center"
             style={{ background: 'rgba(10,10,10,0.97)', backdropFilter: 'blur(30px)' }}
           >
