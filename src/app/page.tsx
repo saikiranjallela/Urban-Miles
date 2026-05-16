@@ -22,7 +22,7 @@ export default function Home() {
       <Hero />
 
       {/* Breathing gap */}
-      <div className="my-16 md:my-24" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.15), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.15), transparent)" }} />
 
       {/* About — story section */}
       <About />
@@ -31,25 +31,25 @@ export default function Home() {
       <Stats />
 
       {/* Breathing gap */}
-      <div className="my-16 md:my-24" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
 
       {/* Formula — Sweat Smile Socialize */}
       <Formula />
 
       {/* Breathing gap */}
-      <div className="my-16 md:my-24" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,179,71,0.15), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,179,71,0.15), transparent)" }} />
 
       {/* Mana Katha — cultural partnership */}
       <ManaKatha />
 
       {/* Breathing gap */}
-      <div className="my-16 md:my-24" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
 
       {/* Experiences — 3K 5K 10K */}
       <Experiences />
 
       {/* Breathing gap */}
-      <div className="my-16 md:my-24" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.1), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,90,31,0.1), transparent)" }} />
 
       {/* Event — next Sunday run */}
       <Event />
@@ -58,7 +58,7 @@ export default function Home() {
       <Community />
 
       {/* Breathing gap */}
-      <div className="my-16 md:my-24" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
 
       {/* Testimonials */}
       <Testimonials />
