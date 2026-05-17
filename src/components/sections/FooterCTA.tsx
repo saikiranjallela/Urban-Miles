@@ -36,16 +36,17 @@ export default function FooterCTA() {
             style={{
               backgroundImage:
                 "url('https://images.unsplash.com/photo-1518619745898-93e765966dcd?q=80&w=2070&auto=format&fit=crop')",
-              filter: "brightness(0.2) saturate(0.4) grayscale(0.3)",
+              filter: "brightness(0.9) saturate(0.2) grayscale(0.5)",
+              opacity: 0.04,
             }}
           />
         </motion.div>
 
-        {/* Orange atmospheric overlay */}
+        {/* Atmospheric overlay */}
         <div
           className="absolute inset-0 z-[1]"
           style={{
-            background: "radial-gradient(ellipse at center, rgba(86,124,78,0.15) 0%, rgba(234, 234, 234, 0.7) 60%, var(--color-bg-primary) 100%)",
+            background: "radial-gradient(ellipse at center, rgba(86,124,78,0.06) 0%, var(--color-bg-primary) 100%)",
           }}
         />
 
@@ -96,7 +97,7 @@ export default function FooterCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg md:text-xl text-text-secondary font-light mb-14 max-w-xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-text-primary font-medium mb-14 max-w-xl mx-auto leading-relaxed"
           >
             Join 100+ runners writing their stories across the streets of Hyderabad every Sunday at 6AM.
           </motion.p>
