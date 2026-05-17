@@ -12,7 +12,7 @@ export default function Event() {
   return (
     <section
       id="event"
-      className="relative py-32 md:py-48 bg-[#0F0F0F] overflow-hidden"
+      className="relative py-32 md:py-48 bg-bg-primary overflow-hidden"
     >
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -47,7 +47,7 @@ export default function Event() {
               The Sunday<br />
               <span className="text-[#567C4E]">Ritual.</span>
             </h2>
-            <p className="text-[#B8B8B8] text-lg font-light max-w-lg mx-auto leading-relaxed">
+            <p className="text-text-secondary text-lg font-light max-w-lg mx-auto leading-relaxed">
               Every Sunday is a new story. Lace up, show up, and let the city be your stage.
             </p>
           </motion.div>
@@ -99,7 +99,7 @@ export default function Event() {
                   </div>
 
                   <h3
-                    className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-8 leading-tight"
+                    className="text-4xl md:text-5xl font-black uppercase tracking-tight text-text-primary mb-8 leading-tight"
                     style={{ fontFamily: 'Oswald, sans-serif' }}
                   >
                     Urban Miles<br />
@@ -115,8 +115,8 @@ export default function Event() {
                         <MapPin size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
-                        <div className="text-white font-bold text-base">Mana Katha Cafe, Panama</div>
-                        <div className="text-[#B8B8B8] text-sm font-light mt-1">LB Nagar, Hyderabad, Telangana</div>
+                        <div className="text-text-primary font-bold text-base">Mana Katha Cafe, Panama</div>
+                        <div className="text-text-secondary text-sm font-light mt-1">LB Nagar, Hyderabad, Telangana</div>
                       </div>
                     </div>
 
@@ -128,8 +128,8 @@ export default function Event() {
                         <Calendar size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
-                        <div className="text-white font-bold text-base">Every Sunday</div>
-                        <div className="text-[#B8B8B8] text-sm font-light mt-1">Weekly recurring event — 52 Sundays a year</div>
+                        <div className="text-text-primary font-bold text-base">Every Sunday</div>
+                        <div className="text-text-secondary text-sm font-light mt-1">Weekly recurring event — 52 Sundays a year</div>
                       </div>
                     </div>
 
@@ -141,8 +141,8 @@ export default function Event() {
                         <Clock size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
-                        <div className="text-white font-bold text-base">6:00 AM Assembly</div>
-                        <div className="text-[#B8B8B8] text-sm font-light mt-1">Flag off at 6:15 AM — post-run at Mana Katha</div>
+                        <div className="text-text-primary font-bold text-base">6:00 AM Assembly</div>
+                        <div className="text-text-secondary text-sm font-light mt-1">Flag off at 6:15 AM — post-run at Mana Katha</div>
                       </div>
                     </div>
 
@@ -154,8 +154,8 @@ export default function Event() {
                         <Ticket size={18} className="text-[#567C4E]" />
                       </div>
                       <div>
-                        <div className="text-white font-bold text-base">₹499 Entry</div>
-                        <div className="text-[#B8B8B8] text-sm font-light mt-1">Includes — T-Shirt, Medal & Post-run experience</div>
+                        <div className="text-text-primary font-bold text-base">₹499 Entry</div>
+                        <div className="text-text-secondary text-sm font-light mt-1">Includes — T-Shirt, Medal & Post-run experience</div>
                       </div>
                     </div>
                   </div>
@@ -164,7 +164,7 @@ export default function Event() {
                 {/* Right: Categories + CTA */}
                 <div className="flex flex-col gap-6">
                   <div>
-                    <h4 className="text-xs font-bold tracking-[0.3em] uppercase text-[#555555] mb-5">Choose Your Distance</h4>
+                    <h4 className="text-xs font-bold tracking-[0.3em] uppercase text-text-muted mb-5">Choose Your Distance</h4>
                     <div className="space-y-3">
                       {categories.map((cat, i) => (
                         <motion.div
@@ -175,16 +175,16 @@ export default function Event() {
                           transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                           className="group flex items-center justify-between p-4 rounded-xl border cursor-pointer transition-all duration-300 hover-lift"
                           style={{
-                            background: "rgba(255,255,255,0.02)",
-                            borderColor: "rgba(255,255,255,0.06)",
+                            background: "rgba(86, 124, 78, 0.02)",
+                            borderColor: "rgba(86, 124, 78, 0.06)",
                           }}
                           onMouseEnter={(e) => {
                             (e.currentTarget as HTMLElement).style.borderColor = `${cat.color}40`;
                             (e.currentTarget as HTMLElement).style.background = `${cat.color}08`;
                           }}
                           onMouseLeave={(e) => {
-                            (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.06)";
-                            (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.02)";
+                            (e.currentTarget as HTMLElement).style.borderColor = "rgba(86, 124, 78, 0.06)";
+                            (e.currentTarget as HTMLElement).style.background = "rgba(86, 124, 78, 0.02)";
                           }}
                         >
                           <div className="flex items-center gap-4">
@@ -199,11 +199,11 @@ export default function Event() {
                               {cat.label}
                             </div>
                             <div>
-                              <div className="text-white font-bold">{cat.sublabel}</div>
-                              <div className="text-[#B8B8B8] text-xs">{cat.desc}</div>
+                              <div className="text-text-primary font-bold">{cat.sublabel}</div>
+                              <div className="text-text-secondary text-xs">{cat.desc}</div>
                             </div>
                           </div>
-                          <ArrowRight size={16} className="text-[#555555] group-hover:text-white group-hover:translate-x-1 transition-all duration-300" />
+                          <ArrowRight size={16} className="text-text-muted group-hover:text-text-primary group-hover:translate-x-1 transition-all duration-300" />
                         </motion.div>
                       ))}
                     </div>
@@ -215,18 +215,18 @@ export default function Event() {
                       href="#"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="group relative overflow-hidden flex items-center justify-center gap-3 w-full py-4 rounded-2xl text-white font-bold text-base uppercase tracking-widest transition-all duration-300"
+                      className="group relative overflow-hidden flex items-center justify-center gap-3 w-full py-4 rounded-2xl text-bg-primary font-bold text-base uppercase tracking-widest transition-all duration-300"
                       style={{
                         background: "#567C4E",
-                        boxShadow: "0 0 30px rgba(86,124,78,0.3), 0 20px 40px rgba(0,0,0,0.3)",
+                        boxShadow: "0 0 30px rgba(86,124,78,0.3), 0 20px 40px rgba(234, 234, 234, 0.3)",
                       }}
                     >
-                      <span className="absolute inset-0 bg-white/20 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
+                      <span className="absolute inset-0 bg-primary/30 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
                       <span className="relative">Secure Your Spot</span>
                       <ArrowRight size={18} className="relative group-hover:translate-x-1 transition-transform" />
                     </motion.a>
 
-                    <p className="text-center text-[#555555] text-xs font-medium tracking-wider">
+                    <p className="text-center text-text-muted text-xs font-medium tracking-wider">
                       Limited spots each Sunday — register early
                     </p>
                   </div>

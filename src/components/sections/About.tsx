@@ -25,7 +25,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-32 md:py-48 bg-[#0F0F0F] overflow-hidden"
+      className="relative py-32 md:py-48 bg-bg-primary overflow-hidden"
     >
       {/* Background atmosphere */}
       <div className="absolute inset-0 pointer-events-none">
@@ -58,7 +58,7 @@ export default function About() {
           >
             More Than<br />
             <span style={{
-              background: "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.3) 100%)",
+              background: "linear-gradient(135deg, var(--color-text-primary) 0%, rgba(86, 124, 78, 0.3) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}>
@@ -99,11 +99,11 @@ export default function About() {
               {/* Bottom gradient */}
               <div
                 className="absolute bottom-0 left-0 right-0 h-2/3"
-                style={{ background: "linear-gradient(to top, rgba(15,15,15,0.9), transparent)" }}
+                style={{ background: "linear-gradient(to top, rgba(234, 234, 234, 0.9), transparent)" }}
               />
               {/* Caption on image */}
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-white font-bold text-lg" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                <p className="text-text-primary font-bold text-lg" style={{ fontFamily: 'Oswald, sans-serif' }}>
                   "We believe movement changes people."
                 </p>
                 <p className="text-[#567C4E] text-sm font-medium mt-1">— Urban Miles Community</p>
@@ -121,13 +121,13 @@ export default function About() {
                 background: "rgba(17,17,17,0.9)",
                 backdropFilter: "blur(20px)",
                 border: "1px solid rgba(86,124,78,0.2)",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 30px rgba(86,124,78,0.1)",
+                boxShadow: "0 20px 60px rgba(234, 234, 234, 0.5), 0 0 30px rgba(86,124,78,0.1)",
               }}
             >
               <div className="text-3xl font-black text-[#567C4E]" style={{ fontFamily: 'Oswald, sans-serif' }}>
                 100+
               </div>
-              <div className="text-[#B8B8B8] text-xs font-medium tracking-wider uppercase mt-1">Runners</div>
+              <div className="text-text-secondary text-xs font-medium tracking-wider uppercase mt-1">Runners</div>
             </motion.div>
           </motion.div>
 
@@ -144,15 +144,15 @@ export default function About() {
               transition={{ duration: 0.9 }}
               className="space-y-6 mb-16"
             >
-              <p className="text-xl md:text-2xl text-white font-light leading-relaxed">
+              <p className="text-xl md:text-2xl text-text-primary font-light leading-relaxed">
                 The city isn&apos;t just concrete and steel.
                 It&apos;s an <em className="not-italic text-[#567C4E] font-medium">arena</em>. A canvas for discipline, passion, and transformation.
               </p>
-              <p className="text-base md:text-lg text-[#B8B8B8] font-light leading-relaxed">
+              <p className="text-base md:text-lg text-text-secondary font-light leading-relaxed">
                 Every early morning start. Every exhausted breath. Every time you push past the pain barrier, you&apos;re writing your own story into the streets of Hyderabad.
               </p>
               <div className="border-l-2 border-[#567C4E] pl-6 py-2">
-                <p className="text-white font-medium text-lg leading-relaxed">
+                <p className="text-text-primary font-medium text-lg leading-relaxed">
                   Urban Miles is a recurring Sunday running movement — a community-first experience blending fitness, connection, and culture.
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.7, delay: i * 0.15 }}
                   className="group relative flex gap-6 py-8 border-b cursor-default"
-                  style={{ borderColor: "rgba(255,255,255,0.06)" }}
+                  style={{ borderColor: "rgba(86, 124, 78, 0.06)" }}
                 >
                   {/* Hover line */}
                   <div className="absolute left-0 bottom-0 h-[1px] w-0 group-hover:w-full bg-[#567C4E] transition-all duration-500" />
@@ -178,12 +178,12 @@ export default function About() {
                   </div>
                   <div>
                     <h3
-                      className="text-3xl font-black uppercase tracking-tight text-white group-hover:text-[#567C4E] transition-colors duration-300 mb-2"
+                      className="text-3xl font-black uppercase tracking-tight text-text-primary group-hover:text-[#567C4E] transition-colors duration-300 mb-2"
                       style={{ fontFamily: 'Oswald, sans-serif' }}
                     >
                       {pillar.title}
                     </h3>
-                    <p className="text-[#B8B8B8] font-light leading-relaxed max-w-2xl pr-4">
+                    <p className="text-text-secondary font-light leading-relaxed max-w-2xl pr-4">
                       {pillar.desc}
                     </p>
                   </div>

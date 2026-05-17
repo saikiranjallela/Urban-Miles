@@ -100,7 +100,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       {/* Bottom gradient */}
       <div
         className="absolute bottom-0 left-0 right-0 h-2/3"
-        style={{ background: "linear-gradient(to top, rgba(15,15,15,0.9) 0%, transparent 100%)" }}
+        style={{ background: "linear-gradient(to top, rgba(234, 234, 234, 0.9) 0%, transparent 100%)" }}
       />
 
       {/* Tag */}
@@ -131,7 +131,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
             transition={{ duration: 0.3 }}
             className="absolute bottom-6 left-6 right-6"
           >
-            <p className="text-white font-bold text-lg leading-tight" style={{ fontFamily: 'Oswald, sans-serif' }}>
+            <p className="text-text-primary font-bold text-lg leading-tight" style={{ fontFamily: 'Oswald, sans-serif' }}>
               {item.caption}
             </p>
             <div className="w-8 h-[2px] bg-[#567C4E] mt-2" />
@@ -142,7 +142,7 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       {/* Default bottom text */}
       {!hovered && (
         <div className="absolute bottom-4 left-4">
-          <p className="text-[#B8B8B8] text-xs font-medium">{item.caption}</p>
+          <p className="text-text-secondary text-xs font-medium">{item.caption}</p>
         </div>
       )}
     </motion.div>
@@ -153,7 +153,7 @@ export default function Community() {
   return (
     <section
       id="community"
-      className="relative py-32 md:py-48 bg-[#0F0F0F] overflow-hidden"
+      className="relative py-32 md:py-48 bg-bg-primary overflow-hidden"
     >
       {/* Atmospheric glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -187,7 +187,7 @@ export default function Community() {
               Urban Miles<br />
               <span
                 style={{
-                  background: "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.3) 100%)",
+                  background: "linear-gradient(135deg, var(--color-text-primary) 0%, rgba(86, 124, 78, 0.3) 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -204,7 +204,7 @@ export default function Community() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-xs"
           >
-            <p className="text-[#B8B8B8] font-light leading-relaxed mb-6">
+            <p className="text-text-secondary font-light leading-relaxed mb-6">
               Smiling faces, candid moments, and shared stories. This is what Urban Miles really looks like.
             </p>
             {/* Avatar stack */}
@@ -214,7 +214,7 @@ export default function Community() {
                   <div
                     key={n}
                     className="w-9 h-9 rounded-full border-2 overflow-hidden shrink-0"
-                    style={{ borderColor: "#0F0F0F" }}
+                    style={{ borderColor: "var(--color-bg-primary)" }}
                   >
                     <img
                       src={`https://i.pravatar.cc/72?img=${n}`}
@@ -225,12 +225,12 @@ export default function Community() {
                 ))}
                 <div
                   className="w-9 h-9 rounded-full border-2 flex items-center justify-center text-[10px] font-bold shrink-0"
-                  style={{ borderColor: "#0F0F0F", background: "#567C4E", color: "#fff" }}
+                  style={{ borderColor: "var(--color-bg-primary)", background: "#567C4E", color: "var(--color-text-primary)" }}
                 >
                   100+
                 </div>
               </div>
-              <span className="text-[#555555] text-xs font-medium">runners strong</span>
+              <span className="text-text-muted text-xs font-medium">runners strong</span>
             </div>
           </motion.div>
         </div>
@@ -254,7 +254,7 @@ export default function Community() {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-[#B8B8B8] hover:text-white transition-colors duration-300"
+            className="group inline-flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-text-secondary hover:text-text-primary transition-colors duration-300"
           >
             <span>Follow our journey on Instagram</span>
             <div className="w-8 h-px bg-current group-hover:w-16 transition-all duration-300" />

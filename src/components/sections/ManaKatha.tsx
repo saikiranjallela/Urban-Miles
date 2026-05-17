@@ -18,7 +18,7 @@ export default function ManaKatha() {
     <section
       id="mana-katha"
       ref={sectionRef}
-      className="relative py-32 md:py-40 overflow-hidden bg-[#161616]"
+      className="relative py-32 md:py-40 overflow-hidden bg-bg-secondary"
     >
       {/* Warm golden atmosphere */}
       <div className="absolute inset-0 pointer-events-none">
@@ -88,10 +88,10 @@ export default function ManaKatha() {
                 >
                   Our Home Base
                 </div>
-                <div className="text-white text-xl font-bold" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                <div className="text-text-primary text-xl font-bold" style={{ fontFamily: 'Oswald, sans-serif' }}>
                   Mana Katha Cafe
                 </div>
-                <div className="text-[#B8B8B8] text-sm">Panama, LB Nagar · Hyderabad</div>
+                <div className="text-text-secondary text-sm">Panama, LB Nagar · Hyderabad</div>
               </div>
             </motion.div>
 
@@ -103,14 +103,14 @@ export default function ManaKatha() {
               transition={{ duration: 0.9, delay: 0.5 }}
               className="absolute -right-2 md:-right-6 top-1/3 max-w-[180px] p-5 rounded-2xl z-10"
               style={{
-                background: "rgba(15,15,15,0.9)",
+                background: "rgba(234, 234, 234, 0.9)",
                 backdropFilter: "blur(20px)",
                 border: "1px solid rgba(109,147,100,0.2)",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.6), 0 0 30px rgba(109,147,100,0.05)",
+                boxShadow: "0 20px 60px rgba(234, 234, 234, 0.6), 0 0 30px rgba(109,147,100,0.05)",
               }}
             >
               <div className="text-3xl mb-3">☕</div>
-              <p className="text-white text-xs font-medium leading-relaxed italic">
+              <p className="text-text-primary text-xs font-medium leading-relaxed italic">
                 &ldquo;Every great story starts with a coffee.&rdquo;
               </p>
             </motion.div>
@@ -136,7 +136,7 @@ export default function ManaKatha() {
                   className="w-16 md:w-20 h-auto rounded-xl border border-[rgba(109,147,100,0.2)]"
                   style={{ filter: "drop-shadow(0 0 20px rgba(109,147,100,0.2))" }}
                 />
-                <div className="text-xl md:text-2xl font-black text-white tracking-wider" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                <div className="text-xl md:text-2xl font-black text-text-primary tracking-wider" style={{ fontFamily: 'Oswald, sans-serif' }}>
                   MANA KATHA CAFE
                 </div>
               </div>
@@ -176,19 +176,19 @@ export default function ManaKatha() {
                 className="relative pl-6 mb-10 py-2"
                 style={{ borderLeft: "2px solid rgba(109,147,100,0.4)" }}
               >
-                <p className="text-lg md:text-xl text-white font-light leading-relaxed italic">
+                <p className="text-lg md:text-xl text-text-primary font-light leading-relaxed italic">
                   &ldquo;A story begins with a coffee.<br />
                   Another begins with a run.&rdquo;
                 </p>
               </div>
 
               {/* Body copy */}
-              <div className="space-y-5 text-[#B8B8B8] font-light leading-relaxed mb-12">
+              <div className="space-y-5 text-text-secondary font-light leading-relaxed mb-12">
                 <p>
                   Mana Katha isn&apos;t just our finish line venue — it&apos;s the heart of the Urban Miles community. Every Sunday, after miles of shared sweat, we gather here for the conversations that matter.
                 </p>
                 <p>
-                  This is not a sponsorship. This is a <span className="text-white font-medium">meaningful cultural partnership</span> — two brands rooted in the same belief: that the best stories happen when people come together.
+                  This is not a sponsorship. This is a <span className="text-text-primary font-medium">meaningful cultural partnership</span> — two brands rooted in the same belief: that the best stories happen when people come together.
                 </p>
               </div>
 
@@ -198,11 +198,11 @@ export default function ManaKatha() {
                   href="https://www.google.com/maps/search/?api=1&query=5th+%26+6th+floor,+BNR+Tower,+Panama+Godowns,+H.no:5-581/1A,+Plot+no+38%2639,+above+Mithaiwala,+Vanasthalipuram,+Telangana+500070"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors"
-                  style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.05)" }}
+                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-primary/10 transition-colors"
+                  style={{ background: "rgba(86, 124, 78, 0.03)", border: "1px solid rgba(86, 124, 78, 0.05)" }}
                 >
                   <span className="text-lg">📍</span>
-                  <span className="text-sm text-[#B8B8B8] font-medium group-hover:text-white transition-colors">Panama, LB Nagar</span>
+                  <span className="text-sm text-text-secondary font-medium group-hover:text-text-primary transition-colors">Panama, LB Nagar</span>
                 </a>
                 {[
                   { icon: "🕕", label: "Post-Run Meetup" },
@@ -212,10 +212,10 @@ export default function ManaKatha() {
                   <div
                     key={item.label}
                     className="flex items-center gap-3 p-3 rounded-xl"
-                    style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.05)" }}
+                    style={{ background: "rgba(86, 124, 78, 0.03)", border: "1px solid rgba(86, 124, 78, 0.05)" }}
                   >
                     <span className="text-lg">{item.icon}</span>
-                    <span className="text-sm text-[#B8B8B8] font-medium">{item.label}</span>
+                    <span className="text-sm text-text-secondary font-medium">{item.label}</span>
                   </div>
                 ))}
               </div>

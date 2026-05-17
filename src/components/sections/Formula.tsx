@@ -55,7 +55,7 @@ export default function Formula() {
     <section
       id="formula"
       ref={sectionRef}
-      className="relative py-32 md:py-48 bg-[#161616] overflow-hidden"
+      className="relative py-32 md:py-48 bg-bg-secondary overflow-hidden"
     >
       {/* Horizontal scan line effect */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -97,7 +97,7 @@ export default function Formula() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[#B8B8B8] text-lg font-light max-w-sm leading-relaxed"
+            className="text-text-secondary text-lg font-light max-w-sm leading-relaxed"
           >
             Three steps. One experience that&apos;ll change the way you think about running.
           </motion.p>
@@ -119,8 +119,8 @@ export default function Formula() {
                 <div
                   className="relative w-20 h-20 rounded-full flex items-center justify-center text-2xl transition-all duration-500 border-2"
                   style={{
-                    background: activeStep === i ? step.accent : "rgba(255,255,255,0.03)",
-                    borderColor: activeStep === i ? step.accent : "rgba(255,255,255,0.1)",
+                    background: activeStep === i ? step.accent : "rgba(86, 124, 78, 0.03)",
+                    borderColor: activeStep === i ? step.accent : "rgba(86, 124, 78, 0.1)",
                     boxShadow: activeStep === i ? `0 0 40px ${step.accent}50` : "none",
                   }}
                 >
@@ -139,19 +139,19 @@ export default function Formula() {
                   className="text-2xl font-black uppercase tracking-tight transition-colors duration-300"
                   style={{
                     fontFamily: 'Oswald, sans-serif',
-                    color: activeStep === i ? step.accent : "rgba(255,255,255,0.4)",
+                    color: activeStep === i ? step.accent : "rgba(86, 124, 78, 0.4)",
                   }}
                 >
                   {step.label}
                 </div>
-                <div className="text-xs font-medium tracking-widest uppercase text-[#555555] group-hover:text-[#B8B8B8] transition-colors">
+                <div className="text-xs font-medium tracking-widest uppercase text-text-muted group-hover:text-text-secondary transition-colors">
                   {step.tagline}
                 </div>
               </motion.button>
 
               {i < steps.length - 1 && (
                 <div className="flex-1 relative h-[2px] mx-4">
-                  <div className="absolute inset-0 bg-white/10" />
+                  <div className="absolute inset-0 bg-primary/15" />
                   <motion.div
                     className="absolute inset-0"
                     style={{
@@ -190,8 +190,8 @@ export default function Formula() {
                 background: activeStep === i
                   ? `linear-gradient(135deg, ${step.accent}15, ${step.accent}05)`
                   : "rgba(23,23,23,0.8)",
-                borderColor: activeStep === i ? `${step.accent}40` : "rgba(255,255,255,0.06)",
-                boxShadow: activeStep === i ? `0 30px 60px rgba(0,0,0,0.4), 0 0 40px ${step.accent}20` : "none",
+                borderColor: activeStep === i ? `${step.accent}40` : "rgba(86, 124, 78, 0.06)",
+                boxShadow: activeStep === i ? `0 30px 60px rgba(234, 234, 234, 0.4), 0 0 40px ${step.accent}20` : "none",
               }}
             >
               {/* Number */}
@@ -210,13 +210,13 @@ export default function Formula() {
                 className="text-4xl font-black uppercase tracking-tighter mb-3 transition-colors duration-300"
                 style={{
                   fontFamily: 'Oswald, sans-serif',
-                  color: activeStep === i ? step.accent : "#FFFFFF",
+                  color: activeStep === i ? step.accent : "var(--color-text-primary)",
                 }}
               >
                 {step.label}
               </h3>
 
-              <p className="text-[#B8B8B8] font-light leading-relaxed mb-8 text-sm">
+              <p className="text-text-secondary font-light leading-relaxed mb-8 text-sm">
                 {step.description}
               </p>
 
@@ -254,11 +254,11 @@ export default function Formula() {
           transition={{ duration: 0.9, delay: 0.4 }}
           className="text-center mt-24"
         >
-          <p className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-white" style={{ fontFamily: 'Oswald, sans-serif' }}>
+          <p className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-text-primary" style={{ fontFamily: 'Oswald, sans-serif' }}>
             This is <span className="text-[#567C4E]">NOT</span> just a run.
           </p>
-          <p className="text-[#B8B8B8] font-light mt-4 text-lg">
-            This is a <span className="text-white font-medium">culture</span>.
+          <p className="text-text-secondary font-light mt-4 text-lg">
+            This is a <span className="text-text-primary font-medium">culture</span>.
           </p>
         </motion.div>
 

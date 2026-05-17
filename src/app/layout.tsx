@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${oswaldFont.variable} ${inter.variable} antialiased bg-[#0F0F0F] text-white grain-overlay`}
+        className={`${oswaldFont.variable} ${inter.variable} antialiased bg-bg-primary text-text-primary grain-overlay`}
         style={{ fontFamily: "var(--font-oswald), var(--font-inter), sans-serif" }}
       >
         {children}

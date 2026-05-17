@@ -12,7 +12,7 @@ import FooterCTA from "@/components/sections/FooterCTA";
 export default function Home() {
   return (
     <main
-      className="min-h-screen bg-[#0F0F0F] text-white"
+      className="min-h-screen bg-bg-primary text-text-primary"
       style={{ overflowX: "hidden" }}
     >
       <Navbar />
@@ -30,7 +30,7 @@ export default function Home() {
       <Stats />
 
       {/* Breathing gap */}
-      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(86, 124, 78, 0.05), transparent)" }} />
 
       {/* Formula — Sweat Smile Socialize */}
       <Formula />
@@ -42,7 +42,7 @@ export default function Home() {
       <ManaKatha />
 
       {/* Breathing gap */}
-      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(86, 124, 78, 0.05), transparent)" }} />
 
       {/* Experiences — 3K 5K 10K */}
       <Experiences />
@@ -57,7 +57,7 @@ export default function Home() {
       <Community />
 
       {/* Breathing gap */}
-      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)" }} />
+      <div className="w-full" style={{ height: "2px", background: "linear-gradient(90deg, transparent, rgba(86, 124, 78, 0.05), transparent)" }} />
 
       {/* Footer + CTA */}
       <FooterCTA />

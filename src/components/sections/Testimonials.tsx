@@ -54,7 +54,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className="relative py-32 md:py-48 bg-[#161616] overflow-hidden"
+      className="relative py-32 md:py-48 bg-bg-secondary overflow-hidden"
     >
       {/* Background accent */}
       <div className="absolute inset-0 pointer-events-none">
@@ -103,7 +103,7 @@ export default function Testimonials() {
             className="relative rounded-3xl p-8 md:p-14"
             style={{
               background: "rgba(23,23,23,0.8)",
-              border: "1px solid rgba(255,255,255,0.06)",
+              border: "1px solid rgba(86, 124, 78, 0.06)",
               backdropFilter: "blur(20px)",
             }}
           >
@@ -129,7 +129,7 @@ export default function Testimonials() {
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -20, filter: "blur(4px)" }}
                 transition={{ duration: 0.5 }}
-                className="text-xl md:text-2xl lg:text-3xl font-light text-white leading-relaxed mb-10"
+                className="text-xl md:text-2xl lg:text-3xl font-light text-text-primary leading-relaxed mb-10"
                 style={{ fontFamily: 'Oswald, sans-serif' }}
               >
                 &ldquo;{current.quote}&rdquo;
@@ -157,10 +157,10 @@ export default function Testimonials() {
                   />
                 </div>
                 <div>
-                  <div className="text-white font-bold text-lg" style={{ fontFamily: 'Oswald, sans-serif' }}>
+                  <div className="text-text-primary font-bold text-lg" style={{ fontFamily: 'Oswald, sans-serif' }}>
                     {current.name}
                   </div>
-                  <div className="text-[#B8B8B8] text-sm">{current.role} · {current.location}</div>
+                  <div className="text-text-secondary text-sm">{current.role} · {current.location}</div>
                 </div>
                 <div
                   className="ml-auto px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase"
@@ -187,14 +187,14 @@ export default function Testimonials() {
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-3 px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 border"
               style={{
-                background: active === i ? "rgba(86,124,78,0.1)" : "rgba(255,255,255,0.02)",
-                borderColor: active === i ? "rgba(86,124,78,0.4)" : "rgba(255,255,255,0.06)",
+                background: active === i ? "rgba(86,124,78,0.1)" : "rgba(86, 124, 78, 0.02)",
+                borderColor: active === i ? "rgba(86,124,78,0.4)" : "rgba(86, 124, 78, 0.06)",
                 color: active === i ? "#567C4E" : "#B8B8B8",
               }}
             >
               <div
                 className="w-7 h-7 rounded-full overflow-hidden border"
-                style={{ borderColor: active === i ? "rgba(86,124,78,0.5)" : "rgba(255,255,255,0.1)" }}
+                style={{ borderColor: active === i ? "rgba(86,124,78,0.5)" : "rgba(86, 124, 78, 0.1)" }}
               >
                 <img src={t.avatar} alt={t.name} className="w-full h-full object-cover" />
               </div>

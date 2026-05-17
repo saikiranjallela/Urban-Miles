@@ -221,7 +221,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#0F0F0F]"
+      className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden bg-bg-primary"
     >
       <CursorEffect />
 
@@ -262,8 +262,8 @@ export default function Hero() {
           className="w-full h-full"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)
+              linear-gradient(rgba(86, 124, 78, 0.5) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(86, 124, 78, 0.5) 1px, transparent 1px)
             `,
             backgroundSize: "80px 80px",
           }}
@@ -283,7 +283,7 @@ export default function Hero() {
             className="text-[22vw] font-black uppercase leading-none opacity-[0.035] tracking-[-0.06em]"
             style={{
               fontFamily: 'Oswald, sans-serif',
-              WebkitTextStroke: "1px rgba(255,255,255,0.15)",
+              WebkitTextStroke: "1px rgba(86, 124, 78, 0.15)",
               color: "transparent",
             }}
           >
@@ -307,14 +307,14 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-[4] pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at center, transparent 30%, rgba(15,15,15,0.6) 70%, rgba(15,15,15,0.95) 100%)",
+          background: "radial-gradient(ellipse at center, transparent 30%, rgba(234, 234, 234, 0.6) 70%, rgba(234, 234, 234, 0.95) 100%)",
         }}
       />
 
       {/* ── Layer 4: Bottom Fade ── */}
       <div
         className="absolute bottom-0 left-0 right-0 h-48 z-[4] pointer-events-none"
-        style={{ background: "linear-gradient(to bottom, transparent, #0F0F0F)" }}
+        style={{ background: "linear-gradient(to bottom, transparent, var(--color-bg-primary))" }}
       />
 
       {/* ── Main Hero Content ── */}
@@ -334,8 +334,8 @@ export default function Hero() {
             <span className="text-[#567C4E] text-xs font-bold tracking-[0.35em] uppercase">
               Hyderabad Est. 2026
             </span>
-            <span className="hidden sm:block h-[1px] w-4 bg-white/20" />
-            <span className="text-[#B8B8B8] text-xs font-medium tracking-[0.25em] uppercase">
+            <span className="hidden sm:block h-[1px] w-4 bg-primary/30" />
+            <span className="text-text-secondary text-xs font-medium tracking-[0.25em] uppercase">
               Every Sunday 6AM
             </span>
           </div>
@@ -363,7 +363,7 @@ export default function Hero() {
                     }}
                   >
                     <img
-                      src="/images/u1.png"
+                      src="/images/u1.png?v=2"
                       alt="Logo"
                       className="w-auto inline-block object-contain"
                       style={{
@@ -376,6 +376,7 @@ export default function Hero() {
                         marginRight: "-0.085em",
 
                         marginLeft: "0.04em",
+                        filter: "brightness(0) saturate(100%) invert(45%) sepia(15%) saturate(723%) hue-rotate(61deg) brightness(92%) contrast(88%)"
                       }}
                     />
                   </motion.span>
@@ -388,7 +389,7 @@ export default function Hero() {
                   className="inline-block text-[13vw] md:text-[14vw] lg:text-[12vw] font-black uppercase leading-[0.85] tracking-[-0.04em]"
                   style={{
                     fontFamily: 'Oswald, sans-serif',
-                    color: char === " " ? "transparent" : "#FFFFFF",
+                    color: char === " " ? "transparent" : "var(--color-text-primary)",
                     width: char === " " ? "3vw" : "auto",
                     display: "inline-block",
                   }}
@@ -413,7 +414,7 @@ export default function Hero() {
                 className="text-lg md:text-4xl font-bold tracking-wider uppercase"
                 style={{
                   fontFamily: 'Oswald, sans-serif',
-                  color: i === 1 ? "#567C4E" : "#FFFFFF",
+                  color: i === 1 ? "#567C4E" : "var(--color-text-primary)",
                 }}
               >
                 {word}
@@ -430,7 +431,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.9 }}
-          className="text-xs md:text-base font-medium tracking-[0.3em] uppercase text-[#B8B8B8] mb-3"
+          className="text-xs md:text-base font-medium tracking-[0.3em] uppercase text-text-secondary mb-3"
         >
           Sweat &bull; Smile &bull; Socialize
         </motion.p>
@@ -440,7 +441,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.1 }}
-          className="text-sm md:text-lg text-[#555555] font-light italic mb-8 md:mb-14 max-w-md leading-relaxed"
+          className="text-sm md:text-lg text-text-muted font-light italic mb-8 md:mb-14 max-w-md leading-relaxed"
         >
           It starts with a run.<br />It becomes an experience.
         </motion.p>
@@ -457,7 +458,7 @@ export default function Hero() {
             href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative overflow-hidden rounded-full text-sm md:text-base font-bold uppercase tracking-widest px-8 md:px-10 py-3 md:py-4 text-white transition-all duration-500"
+            className="group relative overflow-hidden rounded-full text-sm md:text-base font-bold uppercase tracking-widest px-8 md:px-10 py-3 md:py-4 text-bg-primary transition-all duration-500"
             style={{
               background: "#567C4E",
               boxShadow: "0 0 30px rgba(86,124,78,0.4), 0 0 60px rgba(86,124,78,0.1)",
@@ -469,7 +470,7 @@ export default function Hero() {
               (e.currentTarget as HTMLElement).style.boxShadow = "0 0 30px rgba(86,124,78,0.4), 0 0 60px rgba(86,124,78,0.1)";
             }}
           >
-            <span className="absolute inset-0 bg-white/20 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
+            <span className="absolute inset-0 bg-primary/30 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 skew-x-12" />
             <span className="relative flex items-center gap-3">
               Register Now
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -479,7 +480,7 @@ export default function Hero() {
           {/* Secondary CTA */}
           <a
             href="#about"
-            className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm font-bold uppercase tracking-widest text-[#B8B8B8] hover:text-white transition-colors duration-300 mt-4 sm:mt-0"
+            className="group flex items-center gap-2 md:gap-3 text-xs md:text-sm font-bold uppercase tracking-widest text-text-secondary hover:text-text-primary transition-colors duration-300 mt-4 sm:mt-0"
           >
             <span>Explore the Movement</span>
             <div className="w-8 h-[1px] bg-current group-hover:w-14 transition-all duration-300" />
@@ -495,7 +496,7 @@ export default function Hero() {
         style={{ opacity }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3"
       >
-        <span className="text-[10px] font-bold tracking-[0.35em] uppercase text-[#555555]">Scroll</span>
+        <span className="text-[10px] font-bold tracking-[0.35em] uppercase text-text-muted">Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8 }}
@@ -510,7 +511,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.5, duration: 1 }}
-        className="absolute bottom-0 left-0 right-0 z-[8] overflow-hidden border-t border-white/5 bg-[#0F0F0F]/50 backdrop-blur-sm py-3"
+        className="absolute bottom-0 left-0 right-0 z-[8] overflow-hidden border-t border-primary/10 bg-bg-primary/50 backdrop-blur-sm py-3"
       >
         <div className="flex animate-marquee whitespace-nowrap">
           {Array.from({ length: 6 }).map((_, i) => (

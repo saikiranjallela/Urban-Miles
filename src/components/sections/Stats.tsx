@@ -17,10 +17,10 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="relative py-24 md:py-32 overflow-hidden bg-[#0F0F0F]"
+      className="relative py-24 md:py-32 overflow-hidden bg-bg-primary"
     >
       {/* Horizontal rule top */}
-      <div className="absolute top-0 left-12 right-12 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent)" }} />
+      <div className="absolute top-0 left-12 right-12 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(86, 124, 78, 0.08), transparent)" }} />
 
       {/* Glow */}
       <div
@@ -40,7 +40,7 @@ export default function Stats() {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.12 }}
               className="group relative flex flex-col items-center md:items-start text-center md:text-left px-8 py-12 cursor-default"
-              style={{ borderRight: i < 3 ? "1px solid rgba(255,255,255,0.06)" : "none" }}
+              style={{ borderRight: i < 3 ? "1px solid rgba(86, 124, 78, 0.06)" : "none" }}
             >
               {/* Hover glow */}
               <div
@@ -53,7 +53,7 @@ export default function Stats() {
                 className="text-5xl md:text-6xl lg:text-7xl font-black mb-3 tracking-tighter transition-colors duration-300 group-hover:text-[#567C4E]"
                 style={{
                   fontFamily: 'Oswald, sans-serif',
-                  background: "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.5) 100%)",
+                  background: "linear-gradient(135deg, var(--color-text-primary) 0%, rgba(86, 124, 78, 0.5) 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -62,12 +62,12 @@ export default function Stats() {
               </div>
 
               {/* Label */}
-              <div className="text-white font-bold text-lg mb-1" style={{ fontFamily: 'Oswald, sans-serif' }}>
+              <div className="text-text-primary font-bold text-lg mb-1" style={{ fontFamily: 'Oswald, sans-serif' }}>
                 {stat.label}
               </div>
 
               {/* Sub */}
-              <div className="text-[#555555] text-sm font-light">{stat.sub}</div>
+              <div className="text-text-muted text-sm font-light">{stat.sub}</div>
 
               {/* Bottom accent on hover */}
               <div className="absolute bottom-0 left-8 w-0 group-hover:w-12 h-[2px] bg-[#567C4E] transition-all duration-500" />
@@ -77,7 +77,7 @@ export default function Stats() {
       </div>
 
       {/* Horizontal rule bottom */}
-      <div className="absolute bottom-0 left-12 right-12 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent)" }} />
+      <div className="absolute bottom-0 left-12 right-12 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(86, 124, 78, 0.08), transparent)" }} />
     </section>
   );
 }

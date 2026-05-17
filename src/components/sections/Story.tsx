@@ -37,7 +37,7 @@ export default function Story() {
               <p>
                 Every early morning start. Every exhausted breath. Every time you push past the pain barrier, you are writing your own story into the streets.
               </p>
-              <p className="font-medium text-white border-l-2 border-primary pl-6 py-2">
+              <p className="font-medium text-text-primary border-l-2 border-primary pl-6 py-2">
                 We believe movement changes people. And changed people change the world.
               </p>
             </motion.div>
@@ -49,7 +49,7 @@ export default function Story() {
               initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
               animate={isInView ? { opacity: 1, scale: 1, rotate: -2 } : { opacity: 0, scale: 0.9, rotate: -2 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="absolute w-3/4 h-[400px] bg-bg-tertiary rounded-3xl overflow-hidden shadow-2xl z-10 top-0 right-0 border border-white/5"
+              className="absolute w-3/4 h-[400px] bg-bg-tertiary rounded-3xl overflow-hidden shadow-2xl z-10 top-0 right-0 border border-primary/10"
             >
               {/* Image Placeholder */}
               <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" />
@@ -59,7 +59,7 @@ export default function Story() {
               initial={{ opacity: 0, scale: 0.9, rotate: 3 }}
               animate={isInView ? { opacity: 1, scale: 1, rotate: 3 } : { opacity: 0, scale: 0.9, rotate: 3 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="absolute w-2/3 h-[300px] bg-bg-secondary rounded-3xl overflow-hidden shadow-2xl z-20 bottom-0 left-0 border border-white/10"
+              className="absolute w-2/3 h-[300px] bg-bg-secondary rounded-3xl overflow-hidden shadow-2xl z-20 bottom-0 left-0 border border-primary/15"
             >
               {/* Image Placeholder */}
               <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1502224562085-639556652f33?q=80&w=2064&auto=format&fit=crop')] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" />

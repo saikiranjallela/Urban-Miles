@@ -20,14 +20,14 @@ export default function Experiences() {
   return (
     <section
       id="experiences"
-      className="relative py-32 md:py-40 bg-[#161616] overflow-hidden border-y"
-      style={{ borderColor: "rgba(255,255,255,0.04)" }}
+      className="relative py-32 md:py-40 bg-bg-secondary overflow-hidden border-y"
+      style={{ borderColor: "rgba(86, 124, 78, 0.04)" }}
     >
       {/* Subtle grid texture */}
       <div
         className="absolute inset-0 opacity-[0.02] pointer-events-none"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(86, 124, 78, 1) 1px, transparent 1px), linear-gradient(90deg, rgba(86, 124, 78, 1) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
         }}
       />
@@ -53,7 +53,7 @@ export default function Experiences() {
               Choose Your<br />
               <span
                 style={{
-                  background: "linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.3) 100%)",
+                  background: "linear-gradient(135deg, var(--color-text-primary) 0%, rgba(86, 124, 78, 0.3) 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -68,7 +68,7 @@ export default function Experiences() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[#B8B8B8] font-light max-w-xs leading-relaxed"
+            className="text-text-secondary font-light max-w-xs leading-relaxed"
           >
             Every runner is different. Whether you&apos;re here for the vibes or the challenge — we have your distance.
           </motion.p>
@@ -86,13 +86,13 @@ export default function Experiences() {
               className="group relative rounded-3xl overflow-hidden cursor-pointer hover-lift"
               style={{
                 background: "rgba(23,23,23,0.9)",
-                border: "1px solid rgba(255,255,255,0.06)",
+                border: "1px solid rgba(86, 124, 78, 0.06)",
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.borderColor = `${exp.color}30`;
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.06)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(86, 124, 78, 0.06)";
               }}
             >
               {/* Top color accent */}
@@ -123,16 +123,16 @@ export default function Experiences() {
 
                 {/* Title */}
                 <div className="mb-1">
-                  <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#555555]">{exp.distance}</span>
+                  <span className="text-xs font-bold tracking-[0.25em] uppercase text-text-muted">{exp.distance}</span>
                 </div>
                 <h3
                   className="text-3xl font-black uppercase tracking-tight mb-4 transition-colors duration-300"
-                  style={{ fontFamily: 'Oswald, sans-serif', color: "rgba(255,255,255,0.9)" }}
+                  style={{ fontFamily: 'Oswald, sans-serif', color: "rgba(86, 124, 78, 0.9)" }}
                 >
                   {exp.title}
                 </h3>
 
-                <p className="text-[#B8B8B8] font-light leading-relaxed text-sm mb-8">
+                <p className="text-text-secondary font-light leading-relaxed text-sm mb-8">
                   {exp.desc}
                 </p>
 
@@ -153,7 +153,7 @@ export default function Experiences() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLScF_604KwPfEc_NqLnXRXtgOx7A7Bb_PpD8Aj_815DctPJm6g/viewform?usp=publish-editor"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#555555] group-hover:text-white transition-colors duration-300"
+                  className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-text-muted group-hover:text-text-primary transition-colors duration-300"
                 >
                   Register for {exp.id}
                   <ArrowUpRight
