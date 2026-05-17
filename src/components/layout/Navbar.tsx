@@ -27,17 +27,28 @@ export default function Navbar() {
         initial={{ y: -120, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "bg-[#0F0F0F]/80 backdrop-blur-xl border-b border-white/5 py-3"
-            : "bg-transparent py-6"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+          ? "bg-[#0F0F0F]/80 backdrop-blur-xl border-b border-white/5 py-3"
+          : "bg-transparent py-6"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="relative group">
-            <span className="text-xl md:text-2xl font-black tracking-tighter uppercase" style={{ fontFamily: 'Oswald, sans-serif', letterSpacing: '-0.04em' }}>
-              URBAN<span className="text-[#567C4E] group-hover:text-glow transition-all duration-300">MILES</span>
+          <a href="#" className="relative flex items-center group">
+            <span className="text-xl md:text-2xl font-black tracking-tighter uppercase flex items-center" style={{ fontFamily: 'Oswald, sans-serif', letterSpacing: '-0.04em' }}>
+              <img
+                src="/images/u1.png"
+                alt="U"
+                className="w-auto inline-block object-contain"
+                style={{
+                  height: "0.94em",
+                  verticalAlign: "middle",
+                  transform: "translateY(0.01em)",
+                  marginRight: "-0.08em",
+                  marginLeft: "-0.02em"
+                }}
+              />
+              RBAN<span className="text-[#567C4E] group-hover:text-glow transition-all duration-300">MILES</span>
             </span>
             <div className="absolute -bottom-1 left-0 h-[1px] w-0 group-hover:w-full bg-[#567C4E] transition-all duration-500" />
           </a>

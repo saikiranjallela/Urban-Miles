@@ -351,21 +351,52 @@ export default function Hero() {
             className="flex flex-wrap justify-center"
             aria-label="URBAN MILES"
           >
-            {titleChars.map((char, i) => (
-              <motion.span
-                key={i}
-                variants={charVariants}
-                className="inline-block text-[13vw] md:text-[14vw] lg:text-[12vw] font-black uppercase leading-[0.85] tracking-[-0.04em]"
-                style={{
-                  fontFamily: 'Oswald, sans-serif',
-                  color: char === " " ? "transparent" : "#FFFFFF",
-                  width: char === " " ? "3vw" : "auto",
-                  display: "inline-block",
-                }}
-              >
-                {char}
-              </motion.span>
-            ))}
+            {titleChars.map((char, i) => {
+              if (i === 0) {
+                return (
+                  <motion.span
+                    key={i}
+                    variants={charVariants}
+                    className="inline-block text-[13vw] md:text-[14vw] lg:text-[12vw] leading-[0.85] tracking-[-0.04em]"
+                    style={{
+                      display: "inline-block",
+                    }}
+                  >
+                    <img
+                      src="/images/u1.png"
+                      alt="Logo"
+                      className="w-auto inline-block object-contain"
+                      style={{
+                        height: "0.99em",
+
+                        verticalAlign: "middle",
+
+                        transform: "translateY(-0.099em)",
+
+                        marginRight: "-0.085em",
+
+                        marginLeft: "0.04em",
+                      }}
+                    />
+                  </motion.span>
+                );
+              }
+              return (
+                <motion.span
+                  key={i}
+                  variants={charVariants}
+                  className="inline-block text-[13vw] md:text-[14vw] lg:text-[12vw] font-black uppercase leading-[0.85] tracking-[-0.04em]"
+                  style={{
+                    fontFamily: 'Oswald, sans-serif',
+                    color: char === " " ? "transparent" : "#FFFFFF",
+                    width: char === " " ? "3vw" : "auto",
+                    display: "inline-block",
+                  }}
+                >
+                  {char}
+                </motion.span>
+              );
+            })}
           </motion.div>
         </div>
 
